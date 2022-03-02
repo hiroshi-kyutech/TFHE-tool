@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tfhe_libex: TFHEArray&lt; Type &gt; クラステンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tfhe_libex
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="classTFHEArray-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">TFHEArray&lt; Type &gt; クラステンプレート</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TFHEの多次元配列のクラス.  
+ <a href="classTFHEArray.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="array_8hpp_source.html">array.hpp</a>&gt;</code></p>
+<div class="dynheader">
+TFHEArray&lt; Type &gt; の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classTFHEArray__inherit__graph.png" border="0" usemap="#TFHEArray_3_01Type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="TFHEArray_3_01Type_01_4_inherit__map" id="TFHEArray_3_01Type_01_4_inherit__map">
+<area shape="rect" title="TFHEの多次元配列のクラス." alt="" coords="5,155,156,181"/>
+<area shape="rect" href="classTFHEKeySet.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス." alt="" coords="30,5,131,32"/>
+<area shape="rect" href="classTFHEIO.html" title="ファイル入出力の共通処理のクラス." alt="" coords="83,80,153,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+TFHEArray&lt; Type &gt; 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classTFHEArray__coll__graph.png" border="0" usemap="#TFHEArray_3_01Type_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="TFHEArray_3_01Type_01_4_coll__map" id="TFHEArray_3_01Type_01_4_coll__map">
+<area shape="rect" title="TFHEの多次元配列のクラス." alt="" coords="5,155,156,181"/>
+<area shape="rect" href="classTFHEKeySet.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス." alt="" coords="30,5,131,32"/>
+<area shape="rect" href="classTFHEIO.html" title="ファイル入出力の共通処理のクラス." alt="" coords="83,80,153,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3e38e8f81af4d557f9307393fadf63c3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Alloc  = std::allocator&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a3e38e8f81af4d557f9307393fadf63c3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTFHEArray.html#a3e38e8f81af4d557f9307393fadf63c3">TFHEArray</a> (std::vector&lt; T, Alloc &gt; vec)</td></tr>
+<tr class="memdesc:a3e38e8f81af4d557f9307393fadf63c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">多次元のstd::vector vecとその形を示すstd::vector&lt;int&gt; array_shapeからTFHEArrayを作成するコンストラクタ  <a href="classTFHEArray.html#a3e38e8f81af4d557f9307393fadf63c3">[詳解]</a><br /></td></tr>
+<tr class="separator:a3e38e8f81af4d557f9307393fadf63c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2d163a2607e7288d46c1dfeec161ac"><td class="memTemplParams" colspan="2"><a id="aad2d163a2607e7288d46c1dfeec161ac"></a>
+template&lt;typename T , typename Alloc  = std::allocator&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:aad2d163a2607e7288d46c1dfeec161ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mold</b> (std::vector&lt; T, Alloc &gt; vec)</td></tr>
+<tr class="separator:aad2d163a2607e7288d46c1dfeec161ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191b1fde603c33bc1dc3c2e4d67c106d"><td class="memItemLeft" align="right" valign="top"><a id="a191b1fde603c33bc1dc3c2e4d67c106d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mold</b> (int num)</td></tr>
+<tr class="separator:a191b1fde603c33bc1dc3c2e4d67c106d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe566c169e3b146a1ab71802d142eab"><td class="memItemLeft" align="right" valign="top"><a id="aebe566c169e3b146a1ab71802d142eab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mold</b> (std::vector&lt; bool &gt;::reference value)</td></tr>
+<tr class="separator:aebe566c169e3b146a1ab71802d142eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f8df504643aed94d5d794370f4db97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEArray.html#a59f8df504643aed94d5d794370f4db97">TFHEArray</a> (const char *path, int id)</td></tr>
+<tr class="memdesc:a59f8df504643aed94d5d794370f4db97"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの配列をファイルから読み込むコンストラクタ.  <a href="classTFHEArray.html#a59f8df504643aed94d5d794370f4db97">[詳解]</a><br /></td></tr>
+<tr class="separator:a59f8df504643aed94d5d794370f4db97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4450ad65a1acd651a5f576e7c576cc6a"><td class="memTemplParams" colspan="2">template&lt;class... T&gt; </td></tr>
+<tr class="memitem:a4450ad65a1acd651a5f576e7c576cc6a"><td class="memTemplItemLeft" align="right" valign="top">Type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTFHEArray.html#a4450ad65a1acd651a5f576e7c576cc6a">at</a> (T... n)</td></tr>
+<tr class="memdesc:a4450ad65a1acd651a5f576e7c576cc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの配列の要素の参照を返すメソッド.  <a href="classTFHEArray.html#a4450ad65a1acd651a5f576e7c576cc6a">[詳解]</a><br /></td></tr>
+<tr class="separator:a4450ad65a1acd651a5f576e7c576cc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc7a3c63208a12b5072cc91adfa432d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEArray.html#acdc7a3c63208a12b5072cc91adfa432d">save</a> (const char *path, int id)</td></tr>
+<tr class="memdesc:acdc7a3c63208a12b5072cc91adfa432d"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの配列をファイルに保存するメソッド.  <a href="classTFHEArray.html#acdc7a3c63208a12b5072cc91adfa432d">[詳解]</a><br /></td></tr>
+<tr class="separator:acdc7a3c63208a12b5072cc91adfa432d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:aee551540027f1dbd011e32e87fe2fb51"><td class="memItemLeft" align="right" valign="top"><a id="aee551540027f1dbd011e32e87fe2fb51"></a>
+std::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array</b></td></tr>
+<tr class="separator:aee551540027f1dbd011e32e87fe2fb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e6fcfff2a3dfc601b47745b48c8cfb"><td class="memItemLeft" align="right" valign="top"><a id="ab9e6fcfff2a3dfc601b47745b48c8cfb"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>shape</b></td></tr>
+<tr class="separator:ab9e6fcfff2a3dfc601b47745b48c8cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3fa340a134c42e1aa3344dc1eb64f2de"><td class="memItemLeft" align="right" valign="top"><a id="a3fa340a134c42e1aa3344dc1eb64f2de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>save_option</b> (FILE *fp)</td></tr>
+<tr class="separator:a3fa340a134c42e1aa3344dc1eb64f2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bffb5284c5413ea2ef69dec47f9689f"><td class="memItemLeft" align="right" valign="top"><a id="a0bffb5284c5413ea2ef69dec47f9689f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>save_meta</b> (FILE *fp, int id)</td></tr>
+<tr class="separator:a0bffb5284c5413ea2ef69dec47f9689f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa09e5fb4d0a584829c9d187dacc368b2"><td class="memTemplParams" colspan="2"><a id="aa09e5fb4d0a584829c9d187dacc368b2"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa09e5fb4d0a584829c9d187dacc368b2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>write</b> (T vec, int pos, int depth)</td></tr>
+<tr class="separator:aa09e5fb4d0a584829c9d187dacc368b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781ddf9235d17d7813f6185143ea9f8c"><td class="memItemLeft" align="right" valign="top"><a id="a781ddf9235d17d7813f6185143ea9f8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (int num, int pos, int depth)</td></tr>
+<tr class="separator:a781ddf9235d17d7813f6185143ea9f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae084f056098d7c0b1f84069f3b9003"><td class="memItemLeft" align="right" valign="top"><a id="a5ae084f056098d7c0b1f84069f3b9003"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::vector&lt; bool &gt;::reference value, int pos, int depth)</td></tr>
+<tr class="separator:a5ae084f056098d7c0b1f84069f3b9003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa370a56255f2cf5fdce337b3968eb15a"><td class="memItemLeft" align="right" valign="top"><a id="aa370a56255f2cf5fdce337b3968eb15a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>array_size</b> ()</td></tr>
+<tr class="separator:aa370a56255f2cf5fdce337b3968eb15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_static_methods_classTFHEKeySet"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTFHEKeySet')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEKeySet.html">TFHEKeySet</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingParameterSet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">parameters</a> ()</td></tr>
+<tr class="memdesc:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingParameterSet*を返すメソッド.  <a href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">[詳解]</a><br /></td></tr>
+<tr class="separator:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingCloudKeySet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">cloud_key</a> ()</td></tr>
+<tr class="memdesc:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingCloudKeySet*を返すメソッド.  <a href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">[詳解]</a><br /></td></tr>
+<tr class="separator:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingSecretKeySet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">secret_key</a> ()</td></tr>
+<tr class="memdesc:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingSecretKeySet*を返すメソッド.  <a href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">[詳解]</a><br /></td></tr>
+<tr class="separator:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a3c95fe0632a477e18af69f268cd59ed8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a3c95fe0632a477e18af69f268cd59ed8">create_new_keyset</a> (int minimum_lambda)</td></tr>
+<tr class="memdesc:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵,クラウド鍵,パラメータを作成するメソッド. <br /></td></tr>
+<tr class="separator:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1a4c09c20004d424d126b1e3b96e45 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="ada1a4c09c20004d424d126b1e3b96e45"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>set_seed</b> (uint32_t *values, int size)</td></tr>
+<tr class="separator:ada1a4c09c20004d424d126b1e3b96e45 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="aeb8549e62c9aa4d77aec48eacfdbb025"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#aeb8549e62c9aa4d77aec48eacfdbb025">load_parameters</a> (const char *path)</td></tr>
+<tr class="memdesc:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのパラメータを読み込むメソッド. <br /></td></tr>
+<tr class="separator:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a3e35bec0fc09b7876569d25f066b7920"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a3e35bec0fc09b7876569d25f066b7920">load_cloud_key</a> (const char *path)</td></tr>
+<tr class="memdesc:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのクラウド鍵を読み込むメソッド. <br /></td></tr>
+<tr class="separator:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="ad324eaa3be302b3e4c033a4ca2064a7b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#ad324eaa3be302b3e4c033a4ca2064a7b">load_secret_key</a> (const char *path)</td></tr>
+<tr class="memdesc:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵を読み込むメソッド. <br /></td></tr>
+<tr class="separator:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a61b41fb319193ea54811e892f70e9348"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a61b41fb319193ea54811e892f70e9348">save_parameters</a> (const char *path)</td></tr>
+<tr class="memdesc:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのパラメータをファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a5e8dd9b8903f1c4ecb05ea8e10e5c35f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a5e8dd9b8903f1c4ecb05ea8e10e5c35f">save_cloud_key</a> (const char *path)</td></tr>
+<tr class="memdesc:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのクラウド鍵をファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="abee9efbf4c03d8ce5c12aac885b8a281"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#abee9efbf4c03d8ce5c12aac885b8a281">save_secret_key</a> (const char *path)</td></tr>
+<tr class="memdesc:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵をファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classTFHEIO"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTFHEIO')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEIO.html">TFHEIO</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:a33e89a960095e6a29b63dcce146c6b21 inherit pro_static_methods_classTFHEIO"><td class="memItemLeft" align="right" valign="top"><a id="a33e89a960095e6a29b63dcce146c6b21"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>find_file_pointer</b> (const char *path, int id, long result[3])</td></tr>
+<tr class="separator:a33e89a960095e6a29b63dcce146c6b21 inherit pro_static_methods_classTFHEIO"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf10232741475802811aae2441f92125 inherit pro_static_methods_classTFHEIO"><td class="memItemLeft" align="right" valign="top"><a id="aaf10232741475802811aae2441f92125"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_from_file</b> (const char *path, long pos[3])</td></tr>
+<tr class="separator:aaf10232741475802811aae2441f92125 inherit pro_static_methods_classTFHEIO"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><h3>template&lt;typename Type&gt;<br />
+class TFHEArray&lt; Type &gt;</h3>
+
+<p>TFHEの多次元配列のクラス. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a3e38e8f81af4d557f9307393fadf63c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e38e8f81af4d557f9307393fadf63c3">&#9670;&nbsp;</a></span>TFHEArray() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , typename Alloc  = std::allocator&lt;T&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEArray.html">TFHEArray</a>&lt; Type &gt;::<a class="el" href="classTFHEArray.html">TFHEArray</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T, Alloc &gt;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>多次元のstd::vector vecとその形を示すstd::vector&lt;int&gt; array_shapeからTFHEArrayを作成するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">std::vector&lt;T,Alloc&gt;</td><td>vec(多次元ベクタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">std::vector&lt;int&gt;</td><td>array_shape(ベクタの形) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEArray.html" title="TFHEの多次元配列のクラス.">TFHEArray</a> </dd></dl>
+
+</div>
+</div>
+<a id="a59f8df504643aed94d5d794370f4db97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f8df504643aed94d5d794370f4db97">&#9670;&nbsp;</a></span>TFHEArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEArray.html">TFHEArray</a>&lt; Type &gt;::<a class="el" href="classTFHEArray.html">TFHEArray</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TFHEの配列をファイルから読み込むコンストラクタ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>char* path(保存先のパス) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>id(識別用のID) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a4450ad65a1acd651a5f576e7c576cc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4450ad65a1acd651a5f576e7c576cc6a">&#9670;&nbsp;</a></span>at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<div class="memtemplate">
+template&lt;class... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Type&amp; <a class="el" href="classTFHEArray.html">TFHEArray</a>&lt; Type &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype">T...&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TFHEの配列の要素の参照を返すメソッド. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>n,...(index) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>任意の型Type </dd></dl>
+
+</div>
+</div>
+<a id="acdc7a3c63208a12b5072cc91adfa432d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc7a3c63208a12b5072cc91adfa432d">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classTFHEArray.html">TFHEArray</a>&lt; Type &gt;::save </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TFHEの配列をファイルに保存するメソッド. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>char* path(保存先のパス) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>id(識別用のID) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>src/include/type/array/<a class="el" href="array_8hpp_source.html">array.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

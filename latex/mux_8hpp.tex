@@ -1,0 +1,58 @@
+\hypertarget{mux_8hpp}{}\doxysection{src/include/operations/arithmetic/ternary/mux.hpp ファイル}
+\label{mux_8hpp}\index{src/include/operations/arithmetic/ternary/mux.hpp@{src/include/operations/arithmetic/ternary/mux.hpp}}
+
+
+条件演算子(multiplexer)の関数.  
+
+
+{\ttfamily \#include \char`\"{}../../../type/core/bool\+\_\+core.\+hpp\char`\"{}}\newline
+mux.\+hpp の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mux_8hpp__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mux_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Type $>$ }\\Type \mbox{\hyperlink{mux_8hpp_aa825b5575b270e02422ca64425f163f1}{mux}} (\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} condition, Type true\+\_\+value, Type false\+\_\+value)
+\begin{DoxyCompactList}\small\item\em 条件式conditionに応じて、真式true\+\_\+valueか偽式false\+\_\+valueを返す関数. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+条件演算子(multiplexer)の関数. 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{mux_8hpp_aa825b5575b270e02422ca64425f163f1}\label{mux_8hpp_aa825b5575b270e02422ca64425f163f1}} 
+\index{mux.hpp@{mux.hpp}!mux@{mux}}
+\index{mux@{mux}!mux.hpp@{mux.hpp}}
+\doxysubsubsection{\texorpdfstring{mux()}{mux()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type mux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}}}]{condition,  }\item[{Type}]{true\+\_\+value,  }\item[{Type}]{false\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+条件式conditionに応じて、真式true\+\_\+valueか偽式false\+\_\+valueを返す関数. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}}} & condition(条件式)\mbox{[}T\+F\+H\+E\+Boolでも可\mbox{]} \\
+\hline
+\mbox{\texttt{ in}}  & {\em 任意の型\+Type} & true\+\_\+value(真式) \\
+\hline
+\mbox{\texttt{ in}}  & {\em 任意の型\+Type} & false\+\_\+value(偽式) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+任意の型\+Type 
+\end{DoxyReturn}

@@ -1,0 +1,121 @@
+\hypertarget{classTFHEInteger}{}\doxysection{T\+F\+H\+E\+Integer$<$ Nbelems $>$ クラステンプレート}
+\label{classTFHEInteger}\index{TFHEInteger$<$ Nbelems $>$@{TFHEInteger$<$ Nbelems $>$}}
+
+
+T\+F\+H\+Eの整数型のクラス.  
+
+
+
+
+{\ttfamily \#include $<$integer.\+hpp$>$}
+
+
+
+T\+F\+H\+E\+Integer$<$ Nbelems $>$ の継承関係図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classTFHEInteger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+T\+F\+H\+E\+Integer$<$ Nbelems $>$ 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classTFHEInteger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEInteger_aff44cb2d3c00e46762da1cd4cf43869a}\label{classTFHEInteger_aff44cb2d3c00e46762da1cd4cf43869a}} 
+{\bfseries T\+F\+H\+E\+Integer} (const \mbox{\hyperlink{classTFHEInteger}{T\+F\+H\+E\+Integer}} \&elm)
+\item 
+\mbox{\Hypertarget{classTFHEInteger_af64d862095ea7c9cf48fd539cd0d2979}\label{classTFHEInteger_af64d862095ea7c9cf48fd539cd0d2979}} 
+{\bfseries T\+F\+H\+E\+Integer} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&elm)
+\item 
+\mbox{\Hypertarget{classTFHEInteger_a6b75e02940a90d3bd3c3d2c84d339fba}\label{classTFHEInteger_a6b75e02940a90d3bd3c3d2c84d339fba}} 
+\mbox{\hyperlink{classTFHEInteger_a6b75e02940a90d3bd3c3d2c84d339fba}{T\+F\+H\+E\+Integer}} ()
+\begin{DoxyCompactList}\small\item\em 空の\+T\+F\+H\+Eの整数型を生成するコンストラクタ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEInteger_ad74138e7fc5010065bfc1e9f4d766f4f}{T\+F\+H\+E\+Integer}} (int number)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型を生成するコンストラクタ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEInteger_a3a268005afcf7fc21a3bb5bcff7ac8b1}{T\+F\+H\+E\+Integer}} (const char $\ast$path, int id)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型をファイルから読み込むコンストラクタ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEInteger_ad598cef4d70f2e5709ad53bf6bfb5408}\label{classTFHEInteger_ad598cef4d70f2e5709ad53bf6bfb5408}} 
+void {\bfseries save\+\_\+raw} (F\+I\+LE $\ast$fp) override
+\item 
+\mbox{\Hypertarget{classTFHEInteger_aad44df7db0dcfda4543d32bbd3383fcb}\label{classTFHEInteger_aad44df7db0dcfda4543d32bbd3383fcb}} 
+void {\bfseries load\+\_\+raw} (F\+I\+LE $\ast$fp) override
+\end{DoxyCompactItemize}
+\doxysubsection*{静的限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEInteger_a92d6a170a2270f520316dfdef86cd9ff}\label{classTFHEInteger_a92d6a170a2270f520316dfdef86cd9ff}} 
+static void {\bfseries save\+\_\+option\+\_\+for\+Array} (F\+I\+LE $\ast$fp)
+\item 
+\mbox{\Hypertarget{classTFHEInteger_a1d1ff37a7d337ca35c1b2429875d5c7f}\label{classTFHEInteger_a1d1ff37a7d337ca35c1b2429875d5c7f}} 
+static int {\bfseries array\+\_\+size} (int shape\+\_\+size, int array\+\_\+size)
+\item 
+\mbox{\Hypertarget{classTFHEInteger_af7cf5252aa59c7da34519802702c95eb}\label{classTFHEInteger_af7cf5252aa59c7da34519802702c95eb}} 
+static int {\bfseries array\+\_\+option\+\_\+num} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{フレンド}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEInteger_aab236ef1e5b679d8e33afd8ad9e932c7}\label{classTFHEInteger_aab236ef1e5b679d8e33afd8ad9e932c7}} 
+class {\bfseries T\+F\+H\+E\+Array$<$ T\+F\+H\+E\+Integer$<$ Nbelems $>$ $>$}
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{詳解}
+\subsubsection*{template$<$int Nbelems$>$\newline
+class T\+F\+H\+E\+Integer$<$ Nbelems $>$}
+
+T\+F\+H\+Eの整数型のクラス. 
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classTFHEInteger_ad74138e7fc5010065bfc1e9f4d766f4f}\label{classTFHEInteger_ad74138e7fc5010065bfc1e9f4d766f4f}} 
+\index{TFHEInteger$<$ Nbelems $>$@{TFHEInteger$<$ Nbelems $>$}!TFHEInteger@{TFHEInteger}}
+\index{TFHEInteger@{TFHEInteger}!TFHEInteger$<$ Nbelems $>$@{TFHEInteger$<$ Nbelems $>$}}
+\doxysubsubsection{\texorpdfstring{TFHEInteger()}{TFHEInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int Nbelems$>$ \\
+\mbox{\hyperlink{classTFHEInteger}{T\+F\+H\+E\+Integer}}$<$ Nbelems $>$\+::\mbox{\hyperlink{classTFHEInteger}{T\+F\+H\+E\+Integer}} (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+T\+F\+H\+Eの整数型を生成するコンストラクタ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em int} & number(暗号化対象) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTFHEInteger_a3a268005afcf7fc21a3bb5bcff7ac8b1}\label{classTFHEInteger_a3a268005afcf7fc21a3bb5bcff7ac8b1}} 
+\index{TFHEInteger$<$ Nbelems $>$@{TFHEInteger$<$ Nbelems $>$}!TFHEInteger@{TFHEInteger}}
+\index{TFHEInteger@{TFHEInteger}!TFHEInteger$<$ Nbelems $>$@{TFHEInteger$<$ Nbelems $>$}}
+\doxysubsubsection{\texorpdfstring{TFHEInteger()}{TFHEInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int Nbelems$>$ \\
+\mbox{\hyperlink{classTFHEInteger}{T\+F\+H\+E\+Integer}}$<$ Nbelems $>$\+::\mbox{\hyperlink{classTFHEInteger}{T\+F\+H\+E\+Integer}} (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+T\+F\+H\+Eの整数型をファイルから読み込むコンストラクタ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em const} & char$\ast$ path(保存先のパス) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & id(識別用の\+ID) \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+src/include/type/integer/\mbox{\hyperlink{integer_8hpp}{integer.\+hpp}}\end{DoxyCompactItemize}

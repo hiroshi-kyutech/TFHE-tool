@@ -1,0 +1,6 @@
+<map id="TFHEFloat16" name="TFHEFloat16">
+<area shape="rect" id="node1" title="TFHEの半精度(16bits)の浮動小数点型のwrapperクラス." alt="" coords="28,229,133,256"/>
+<area shape="rect" id="node2" href="$classTFHEFloat.html" title=" " alt="" coords="5,155,156,181"/>
+<area shape="rect" id="node3" href="$classTFHEFloatCore.html" title="TFHEの浮動小数点型のクラス." alt="" coords="21,80,140,107"/>
+<area shape="rect" id="node4" href="$classTFHEKeySet.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス." alt="" coords="30,5,131,32"/>
+</map>

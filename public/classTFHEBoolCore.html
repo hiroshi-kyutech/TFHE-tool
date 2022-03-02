@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tfhe_libex: TFHEBoolCore クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tfhe_libex
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="classTFHEBoolCore-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">TFHEBoolCore クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TFHEのBool型のcoreクラス.  
+ <a href="classTFHEBoolCore.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="bool__core_8hpp_source.html">bool_core.hpp</a>&gt;</code></p>
+<div class="dynheader">
+TFHEBoolCore の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classTFHEBoolCore__inherit__graph.png" border="0" usemap="#TFHEBoolCore_inherit__map" alt="Inheritance graph"/></div>
+<map name="TFHEBoolCore_inherit__map" id="TFHEBoolCore_inherit__map">
+<area shape="rect" title="TFHEのBool型のcoreクラス." alt="" coords="5,155,120,181"/>
+<area shape="rect" href="classTFHEBool.html" title="TFHEの真理値型のクラス." alt="" coords="20,229,105,256"/>
+<area shape="rect" href="classTFHEKeySet.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス." alt="" coords="12,5,113,32"/>
+<area shape="rect" href="classTFHEIO.html" title="ファイル入出力の共通処理のクラス." alt="" coords="65,80,135,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+TFHEBoolCore 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classTFHEBoolCore__coll__graph.png" border="0" usemap="#TFHEBoolCore_coll__map" alt="Collaboration graph"/></div>
+<map name="TFHEBoolCore_coll__map" id="TFHEBoolCore_coll__map">
+<area shape="rect" title="TFHEのBool型のcoreクラス." alt="" coords="5,171,120,197"/>
+<area shape="rect" href="classTFHEKeySet.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス." alt="" coords="12,5,113,32"/>
+<area shape="rect" href="classTFHEIO.html" title="ファイル入出力の共通処理のクラス." alt="" coords="27,81,98,108"/>
+<area shape="rect" href="classTFHEBit.html" title="単数のLweSample*をwrapするクラス." alt="" coords="123,81,197,108"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad0fb346bb6fc1eb456fa28fbeef20425"><td class="memItemLeft" align="right" valign="top"><a id="ad0fb346bb6fc1eb456fa28fbeef20425"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEBoolCore</b> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;elm)</td></tr>
+<tr class="separator:ad0fb346bb6fc1eb456fa28fbeef20425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310b6cb043363e91ebd97dd544e7764f"><td class="memItemLeft" align="right" valign="top"><a id="a310b6cb043363e91ebd97dd544e7764f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEBoolCore</b> (bool value)</td></tr>
+<tr class="separator:a310b6cb043363e91ebd97dd544e7764f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf141c0b2b4ddd884b1e907c6dc67887"><td class="memItemLeft" align="right" valign="top"><a id="abf141c0b2b4ddd884b1e907c6dc67887"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEBoolCore</b> (<a class="el" href="classTFHEBit.html">TFHEBit</a> value)</td></tr>
+<tr class="separator:abf141c0b2b4ddd884b1e907c6dc67887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8906847b9461f538ae786a31f7f610f3"><td class="memItemLeft" align="right" valign="top"><a id="a8906847b9461f538ae786a31f7f610f3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEBoolCore</b> (const char *path, int id)</td></tr>
+<tr class="separator:a8906847b9461f538ae786a31f7f610f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac456af3a0bf299953e59062dc1940385"><td class="memItemLeft" align="right" valign="top"><a id="ac456af3a0bf299953e59062dc1940385"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (const char *path, int id)</td></tr>
+<tr class="separator:ac456af3a0bf299953e59062dc1940385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a30c0afe83a067d42cb03d94824668e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#a0a30c0afe83a067d42cb03d94824668e">decrypt</a> ()</td></tr>
+<tr class="memdesc:a0a30c0afe83a067d42cb03d94824668e"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型を復号するメソッド.  <a href="classTFHEBoolCore.html#a0a30c0afe83a067d42cb03d94824668e">[詳解]</a><br /></td></tr>
+<tr class="separator:a0a30c0afe83a067d42cb03d94824668e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbe522bd574cb1ab32571ff6b1d1133"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#a4dbe522bd574cb1ab32571ff6b1d1133">operator=</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;elm)</td></tr>
+<tr class="memdesc:a4dbe522bd574cb1ab32571ff6b1d1133"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の代入を行うオペレータ.  <a href="classTFHEBoolCore.html#a4dbe522bd574cb1ab32571ff6b1d1133">[詳解]</a><br /></td></tr>
+<tr class="separator:a4dbe522bd574cb1ab32571ff6b1d1133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e9bf58f665a712585a596fdaf99618"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#ac1e9bf58f665a712585a596fdaf99618">operator!</a> ()</td></tr>
+<tr class="memdesc:ac1e9bf58f665a712585a596fdaf99618"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の否定を行うオペレータ.  <a href="classTFHEBoolCore.html#ac1e9bf58f665a712585a596fdaf99618">[詳解]</a><br /></td></tr>
+<tr class="separator:ac1e9bf58f665a712585a596fdaf99618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c65a7e689583cde6be58af56a88e94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#ab0c65a7e689583cde6be58af56a88e94">operator&amp;</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;other)</td></tr>
+<tr class="memdesc:ab0c65a7e689583cde6be58af56a88e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の論理積を行うオペレータ.  <a href="classTFHEBoolCore.html#ab0c65a7e689583cde6be58af56a88e94">[詳解]</a><br /></td></tr>
+<tr class="separator:ab0c65a7e689583cde6be58af56a88e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efe282d11de9eff1683d90e836ee2fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#a7efe282d11de9eff1683d90e836ee2fe">operator|</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a7efe282d11de9eff1683d90e836ee2fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の論理和を行うオペレータ.  <a href="classTFHEBoolCore.html#a7efe282d11de9eff1683d90e836ee2fe">[詳解]</a><br /></td></tr>
+<tr class="separator:a7efe282d11de9eff1683d90e836ee2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9864e67adb88bad27f7eeb595f12ec20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#a9864e67adb88bad27f7eeb595f12ec20">operator^</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a9864e67adb88bad27f7eeb595f12ec20"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の排他的論理和を行うオペレータ.  <a href="classTFHEBoolCore.html#a9864e67adb88bad27f7eeb595f12ec20">[詳解]</a><br /></td></tr>
+<tr class="separator:a9864e67adb88bad27f7eeb595f12ec20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2418d287c57c32b280d1857cb1f8b179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#a2418d287c57c32b280d1857cb1f8b179">operator*</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a2418d287c57c32b280d1857cb1f8b179"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の論理積を行うオペレータ.  <a href="classTFHEBoolCore.html#a2418d287c57c32b280d1857cb1f8b179">[詳解]</a><br /></td></tr>
+<tr class="separator:a2418d287c57c32b280d1857cb1f8b179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35359c73507dd8e2194d1cf42292728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#ad35359c73507dd8e2194d1cf42292728">operator+</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;other)</td></tr>
+<tr class="memdesc:ad35359c73507dd8e2194d1cf42292728"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の論理和を行うオペレータ.  <a href="classTFHEBoolCore.html#ad35359c73507dd8e2194d1cf42292728">[詳解]</a><br /></td></tr>
+<tr class="separator:ad35359c73507dd8e2194d1cf42292728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff2deef96ca145ad7a07b4120adb512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#adff2deef96ca145ad7a07b4120adb512">operator==</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;other)</td></tr>
+<tr class="memdesc:adff2deef96ca145ad7a07b4120adb512"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の等号の判定を行うオペレータ.  <a href="classTFHEBoolCore.html#adff2deef96ca145ad7a07b4120adb512">[詳解]</a><br /></td></tr>
+<tr class="separator:adff2deef96ca145ad7a07b4120adb512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c600eac8ac49ae54845421103311f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html#ad6c600eac8ac49ae54845421103311f4">operator!=</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;other)</td></tr>
+<tr class="memdesc:ad6c600eac8ac49ae54845421103311f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型の等号の否定の判定を行うオペレータ.  <a href="classTFHEBoolCore.html#ad6c600eac8ac49ae54845421103311f4">[詳解]</a><br /></td></tr>
+<tr class="separator:ad6c600eac8ac49ae54845421103311f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:abff4e67760c93c524fa2116e4de250bb"><td class="memItemLeft" align="right" valign="top"><a id="abff4e67760c93c524fa2116e4de250bb"></a>
+<a class="el" href="classTFHEBit.html">TFHEBit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bit</b></td></tr>
+<tr class="separator:abff4e67760c93c524fa2116e4de250bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a9533573e863ff5ea6e46ab7d44f177da"><td class="memItemLeft" align="right" valign="top"><a id="a9533573e863ff5ea6e46ab7d44f177da"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>load_raw</b> (FILE *fp)</td></tr>
+<tr class="separator:a9533573e863ff5ea6e46ab7d44f177da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7739f9c8a5c33cf1c712ecb191e6cf4f"><td class="memItemLeft" align="right" valign="top"><a id="a7739f9c8a5c33cf1c712ecb191e6cf4f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>save_raw</b> (FILE *fp)</td></tr>
+<tr class="separator:a7739f9c8a5c33cf1c712ecb191e6cf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c088b5539f65d9ca54c027b1897e383"><td class="memItemLeft" align="right" valign="top"><a id="a6c088b5539f65d9ca54c027b1897e383"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_not</b> (<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value)</td></tr>
+<tr class="separator:a6c088b5539f65d9ca54c027b1897e383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91523f270c38004334f85fdbbb67db63"><td class="memItemLeft" align="right" valign="top"><a id="a91523f270c38004334f85fdbbb67db63"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_and</b> (<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2)</td></tr>
+<tr class="separator:a91523f270c38004334f85fdbbb67db63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4014833014f807e9c25f33294d2a1b60"><td class="memItemLeft" align="right" valign="top"><a id="a4014833014f807e9c25f33294d2a1b60"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_or</b> (<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2)</td></tr>
+<tr class="separator:a4014833014f807e9c25f33294d2a1b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad01c8e5df6bd0788d1cf259c8a86f52c"><td class="memItemLeft" align="right" valign="top"><a id="ad01c8e5df6bd0788d1cf259c8a86f52c"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_xor</b> (<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2)</td></tr>
+<tr class="separator:ad01c8e5df6bd0788d1cf259c8a86f52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592092a5be1acac0e0164826487acb29"><td class="memItemLeft" align="right" valign="top"><a id="a592092a5be1acac0e0164826487acb29"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>et</b> (<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2)</td></tr>
+<tr class="separator:a592092a5be1acac0e0164826487acb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507d45b837c93819bf37124b666d7fb8"><td class="memItemLeft" align="right" valign="top"><a id="a507d45b837c93819bf37124b666d7fb8"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>net</b> (<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2)</td></tr>
+<tr class="separator:a507d45b837c93819bf37124b666d7fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_static_methods_classTFHEKeySet"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTFHEKeySet')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEKeySet.html">TFHEKeySet</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingParameterSet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">parameters</a> ()</td></tr>
+<tr class="memdesc:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingParameterSet*を返すメソッド.  <a href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">[詳解]</a><br /></td></tr>
+<tr class="separator:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingCloudKeySet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">cloud_key</a> ()</td></tr>
+<tr class="memdesc:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingCloudKeySet*を返すメソッド.  <a href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">[詳解]</a><br /></td></tr>
+<tr class="separator:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingSecretKeySet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">secret_key</a> ()</td></tr>
+<tr class="memdesc:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingSecretKeySet*を返すメソッド.  <a href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">[詳解]</a><br /></td></tr>
+<tr class="separator:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a3c95fe0632a477e18af69f268cd59ed8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a3c95fe0632a477e18af69f268cd59ed8">create_new_keyset</a> (int minimum_lambda)</td></tr>
+<tr class="memdesc:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵,クラウド鍵,パラメータを作成するメソッド. <br /></td></tr>
+<tr class="separator:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1a4c09c20004d424d126b1e3b96e45 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="ada1a4c09c20004d424d126b1e3b96e45"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>set_seed</b> (uint32_t *values, int size)</td></tr>
+<tr class="separator:ada1a4c09c20004d424d126b1e3b96e45 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="aeb8549e62c9aa4d77aec48eacfdbb025"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#aeb8549e62c9aa4d77aec48eacfdbb025">load_parameters</a> (const char *path)</td></tr>
+<tr class="memdesc:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのパラメータを読み込むメソッド. <br /></td></tr>
+<tr class="separator:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a3e35bec0fc09b7876569d25f066b7920"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a3e35bec0fc09b7876569d25f066b7920">load_cloud_key</a> (const char *path)</td></tr>
+<tr class="memdesc:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのクラウド鍵を読み込むメソッド. <br /></td></tr>
+<tr class="separator:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="ad324eaa3be302b3e4c033a4ca2064a7b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#ad324eaa3be302b3e4c033a4ca2064a7b">load_secret_key</a> (const char *path)</td></tr>
+<tr class="memdesc:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵を読み込むメソッド. <br /></td></tr>
+<tr class="separator:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a61b41fb319193ea54811e892f70e9348"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a61b41fb319193ea54811e892f70e9348">save_parameters</a> (const char *path)</td></tr>
+<tr class="memdesc:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのパラメータをファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a5e8dd9b8903f1c4ecb05ea8e10e5c35f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a5e8dd9b8903f1c4ecb05ea8e10e5c35f">save_cloud_key</a> (const char *path)</td></tr>
+<tr class="memdesc:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのクラウド鍵をファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="abee9efbf4c03d8ce5c12aac885b8a281"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#abee9efbf4c03d8ce5c12aac885b8a281">save_secret_key</a> (const char *path)</td></tr>
+<tr class="memdesc:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵をファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classTFHEIO"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTFHEIO')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEIO.html">TFHEIO</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:a33e89a960095e6a29b63dcce146c6b21 inherit pro_static_methods_classTFHEIO"><td class="memItemLeft" align="right" valign="top"><a id="a33e89a960095e6a29b63dcce146c6b21"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>find_file_pointer</b> (const char *path, int id, long result[3])</td></tr>
+<tr class="separator:a33e89a960095e6a29b63dcce146c6b21 inherit pro_static_methods_classTFHEIO"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf10232741475802811aae2441f92125 inherit pro_static_methods_classTFHEIO"><td class="memItemLeft" align="right" valign="top"><a id="aaf10232741475802811aae2441f92125"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_from_file</b> (const char *path, long pos[3])</td></tr>
+<tr class="separator:aaf10232741475802811aae2441f92125 inherit pro_static_methods_classTFHEIO"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>TFHEのBool型のcoreクラス. </p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a0a30c0afe83a067d42cb03d94824668e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a30c0afe83a067d42cb03d94824668e">&#9670;&nbsp;</a></span>decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TFHEBoolCore::decrypt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型を復号するメソッド. </p>
+<dl class="section return"><dt>戻り値</dt><dd>bool 復号結果 </dd></dl>
+
+</div>
+</div>
+<a id="ac1e9bf58f665a712585a596fdaf99618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e9bf58f665a712585a596fdaf99618">&#9670;&nbsp;</a></span>operator!()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> TFHEBoolCore::operator! </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の否定を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a>論理演算結果 </dd></dl>
+
+</div>
+</div>
+<a id="ad6c600eac8ac49ae54845421103311f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c600eac8ac49ae54845421103311f4">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="el" href="classTFHEBoolCore.html#ac1e9bf58f665a712585a596fdaf99618">TFHEBoolCore::operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の等号の否定の判定を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>other(対象の参照) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a> 論理演算結果 </dd></dl>
+
+</div>
+</div>
+<a id="ab0c65a7e689583cde6be58af56a88e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c65a7e689583cde6be58af56a88e94">&#9670;&nbsp;</a></span>operator&amp;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> TFHEBoolCore::operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の論理積を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>other(対象の参照) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a> 論理演算結果 </dd></dl>
+
+</div>
+</div>
+<a id="a2418d287c57c32b280d1857cb1f8b179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2418d287c57c32b280d1857cb1f8b179">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> TFHEBoolCore::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の論理積を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>other(対象の参照) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a> 論理演算結果 </dd></dl>
+
+</div>
+</div>
+<a id="ad35359c73507dd8e2194d1cf42292728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35359c73507dd8e2194d1cf42292728">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> TFHEBoolCore::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の論理和を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>other(対象の参照) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a> 論理演算結果 </dd></dl>
+
+</div>
+</div>
+<a id="a4dbe522bd574cb1ab32571ff6b1d1133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbe522bd574cb1ab32571ff6b1d1133">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp; TFHEBoolCore::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>elm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の代入を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>other(対象の参照) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a> 代入結果 </dd></dl>
+
+</div>
+</div>
+<a id="adff2deef96ca145ad7a07b4120adb512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff2deef96ca145ad7a07b4120adb512">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> TFHEBoolCore::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の等号の判定を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>other(対象の参照) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a> 論理演算結果 </dd></dl>
+
+</div>
+</div>
+<a id="a9864e67adb88bad27f7eeb595f12ec20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9864e67adb88bad27f7eeb595f12ec20">&#9670;&nbsp;</a></span>operator^()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> TFHEBoolCore::operator^ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の排他的論理和を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>other(対象の参照) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a> 論理演算結果 </dd></dl>
+
+</div>
+</div>
+<a id="a7efe282d11de9eff1683d90e836ee2fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efe282d11de9eff1683d90e836ee2fe">&#9670;&nbsp;</a></span>operator|()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> TFHEBoolCore::operator| </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TFHEのBool型の論理和を行うオペレータ. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>this(呼び出し元のポインタ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a></td><td>other(対象の参照) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス.">TFHEBoolCore(TFHEBool)</a> 論理演算結果 </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>src/include/type/core/<a class="el" href="bool__core_8hpp_source.html">bool_core.hpp</a></li>
+<li>src/lib/type/core/<a class="el" href="bool__core_8cpp.html">bool_core.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

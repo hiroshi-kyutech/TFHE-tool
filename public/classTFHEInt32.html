@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tfhe_libex: TFHEInt32 クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tfhe_libex
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#friends">フレンド</a> &#124;
+<a href="classTFHEInt32-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">TFHEInt32 クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TFHEの32bitsの整数型のクラス.  
+ <a href="classTFHEInt32.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="int32_8hpp_source.html">int32.hpp</a>&gt;</code></p>
+<div class="dynheader">
+TFHEInt32 の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classTFHEInt32__inherit__graph.png" border="0" usemap="#TFHEInt32_inherit__map" alt="Inheritance graph"/></div>
+<map name="TFHEInt32_inherit__map" id="TFHEInt32_inherit__map">
+<area shape="rect" title="TFHEの32bitsの整数型のクラス." alt="" coords="35,304,124,331"/>
+<area shape="rect" href="classTFHEInteger.html" title=" " alt="" coords="5,229,153,256"/>
+<area shape="rect" href="classTFHEIntegerCore.html" title="TFHEの整数型のcoreクラス." alt="" coords="13,155,145,181"/>
+<area shape="rect" href="classTFHEKeySet.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス." alt="" coords="29,5,130,32"/>
+<area shape="rect" href="classTFHEIO.html" title="ファイル入出力の共通処理のクラス." alt="" coords="81,80,152,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+TFHEInt32 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classTFHEInt32__coll__graph.png" border="0" usemap="#TFHEInt32_coll__map" alt="Collaboration graph"/></div>
+<map name="TFHEInt32_coll__map" id="TFHEInt32_coll__map">
+<area shape="rect" title="TFHEの32bitsの整数型のクラス." alt="" coords="43,439,132,465"/>
+<area shape="rect" href="classTFHEInteger.html" title=" " alt="" coords="13,363,161,389"/>
+<area shape="rect" href="classTFHEIntegerCore.html" title="TFHEの整数型のcoreクラス." alt="" coords="21,287,153,313"/>
+<area shape="rect" href="classTFHEKeySet.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス." alt="" coords="73,5,174,32"/>
+<area shape="rect" href="classTFHEIO.html" title="ファイル入出力の共通処理のクラス." alt="" coords="88,81,159,108"/>
+<area shape="rect" href="classTFHEBits.html" title="複数のLweSample*をwrapするクラス." alt="" coords="13,132,95,159"/>
+<area shape="rect" href="classTFHEBoolCore.html" title="TFHEのBool型のcoreクラス." alt="" coords="158,183,273,209"/>
+<area shape="rect" href="classTFHEBit.html" title="単数のLweSample*をwrapするクラス." alt="" coords="234,81,309,108"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8e4ed6676e07c3fc178205369d09ebc6"><td class="memItemLeft" align="right" valign="top"><a id="a8e4ed6676e07c3fc178205369d09ebc6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEInt32</b> (int number)</td></tr>
+<tr class="separator:a8e4ed6676e07c3fc178205369d09ebc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8730d7de1994402b659e831d162cb92e"><td class="memItemLeft" align="right" valign="top"><a id="a8730d7de1994402b659e831d162cb92e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEInt32</b> (const <a class="el" href="classTFHEInt32.html">TFHEInt32</a> &amp;elm)</td></tr>
+<tr class="separator:a8730d7de1994402b659e831d162cb92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac8659af6cb3f15f91eb66f1bc5b6ac"><td class="memItemLeft" align="right" valign="top"><a id="a8ac8659af6cb3f15f91eb66f1bc5b6ac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEInt32</b> (const <a class="el" href="classTFHEInteger.html">TFHEInteger</a>&lt; 32 &gt; &amp;elm)</td></tr>
+<tr class="separator:a8ac8659af6cb3f15f91eb66f1bc5b6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15aacf7d13d05657152342a326e0fd92"><td class="memItemLeft" align="right" valign="top"><a id="a15aacf7d13d05657152342a326e0fd92"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEInt32</b> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;elm)</td></tr>
+<tr class="separator:a15aacf7d13d05657152342a326e0fd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classTFHEInteger"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTFHEInteger')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEInteger.html">TFHEInteger&lt; 32 &gt;</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aff44cb2d3c00e46762da1cd4cf43869a inherit pub_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top"><a id="aff44cb2d3c00e46762da1cd4cf43869a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEInteger</b> (const <a class="el" href="classTFHEInteger.html">TFHEInteger</a> &amp;elm)</td></tr>
+<tr class="separator:aff44cb2d3c00e46762da1cd4cf43869a inherit pub_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64d862095ea7c9cf48fd539cd0d2979 inherit pub_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top"><a id="af64d862095ea7c9cf48fd539cd0d2979"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEInteger</b> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;elm)</td></tr>
+<tr class="separator:af64d862095ea7c9cf48fd539cd0d2979 inherit pub_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b75e02940a90d3bd3c3d2c84d339fba inherit pub_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top"><a id="a6b75e02940a90d3bd3c3d2c84d339fba"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEInteger.html#a6b75e02940a90d3bd3c3d2c84d339fba">TFHEInteger</a> ()</td></tr>
+<tr class="memdesc:a6b75e02940a90d3bd3c3d2c84d339fba inherit pub_methods_classTFHEInteger"><td class="mdescLeft">&#160;</td><td class="mdescRight">空のTFHEの整数型を生成するコンストラクタ. <br /></td></tr>
+<tr class="separator:a6b75e02940a90d3bd3c3d2c84d339fba inherit pub_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74138e7fc5010065bfc1e9f4d766f4f inherit pub_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEInteger.html#ad74138e7fc5010065bfc1e9f4d766f4f">TFHEInteger</a> (int number)</td></tr>
+<tr class="memdesc:ad74138e7fc5010065bfc1e9f4d766f4f inherit pub_methods_classTFHEInteger"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型を生成するコンストラクタ.  <a href="classTFHEInteger.html#ad74138e7fc5010065bfc1e9f4d766f4f">[詳解]</a><br /></td></tr>
+<tr class="separator:ad74138e7fc5010065bfc1e9f4d766f4f inherit pub_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a268005afcf7fc21a3bb5bcff7ac8b1 inherit pub_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEInteger.html#a3a268005afcf7fc21a3bb5bcff7ac8b1">TFHEInteger</a> (const char *path, int id)</td></tr>
+<tr class="memdesc:a3a268005afcf7fc21a3bb5bcff7ac8b1 inherit pub_methods_classTFHEInteger"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型をファイルから読み込むコンストラクタ.  <a href="classTFHEInteger.html#a3a268005afcf7fc21a3bb5bcff7ac8b1">[詳解]</a><br /></td></tr>
+<tr class="separator:a3a268005afcf7fc21a3bb5bcff7ac8b1 inherit pub_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classTFHEIntegerCore"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTFHEIntegerCore')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ac5fa22109b2a25e8c02fb14c5c93bf62 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="ac5fa22109b2a25e8c02fb14c5c93bf62"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEIntegerCore</b> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;elm, int nbelems)</td></tr>
+<tr class="separator:ac5fa22109b2a25e8c02fb14c5c93bf62 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256b889346a3a185ddd454fbd26e4607 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a256b889346a3a185ddd454fbd26e4607"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEIntegerCore</b> (int nbelems)</td></tr>
+<tr class="separator:a256b889346a3a185ddd454fbd26e4607 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c77e9969178e9bd5989e528713f09f inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a26c77e9969178e9bd5989e528713f09f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEIntegerCore</b> (int nbelems, int number)</td></tr>
+<tr class="separator:a26c77e9969178e9bd5989e528713f09f inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66cadfdad2ebb5030da02857bd1d4b5 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="ac66cadfdad2ebb5030da02857bd1d4b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEIntegerCore</b> (int nbelems, const char *path, int id)</td></tr>
+<tr class="separator:ac66cadfdad2ebb5030da02857bd1d4b5 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82a52bcde16ced11649f7b4560daf17 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#aa82a52bcde16ced11649f7b4560daf17">decrypt</a> ()</td></tr>
+<tr class="memdesc:aa82a52bcde16ced11649f7b4560daf17 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型を復号するメソッド.  <a href="classTFHEIntegerCore.html#aa82a52bcde16ced11649f7b4560daf17">[詳解]</a><br /></td></tr>
+<tr class="separator:aa82a52bcde16ced11649f7b4560daf17 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4dfbaad8584c5f7e0b2af7c3c8bbfe inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#aed4dfbaad8584c5f7e0b2af7c3c8bbfe">save</a> (const char *path, int id)</td></tr>
+<tr class="memdesc:aed4dfbaad8584c5f7e0b2af7c3c8bbfe inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型をファイルに保存するメソッド.  <a href="classTFHEIntegerCore.html#aed4dfbaad8584c5f7e0b2af7c3c8bbfe">[詳解]</a><br /></td></tr>
+<tr class="separator:aed4dfbaad8584c5f7e0b2af7c3c8bbfe inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32031002c7798e11bbe1219701764f14 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a32031002c7798e11bbe1219701764f14">sign</a> ()</td></tr>
+<tr class="memdesc:a32031002c7798e11bbe1219701764f14 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で符号を取得するメソッド.  <a href="classTFHEIntegerCore.html#a32031002c7798e11bbe1219701764f14">[詳解]</a><br /></td></tr>
+<tr class="separator:a32031002c7798e11bbe1219701764f14 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f4d1399d49e3d5ba542513e48df359 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a87f4d1399d49e3d5ba542513e48df359">abs</a> ()</td></tr>
+<tr class="memdesc:a87f4d1399d49e3d5ba542513e48df359 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で絶対値を取得するメソッド.  <a href="classTFHEIntegerCore.html#a87f4d1399d49e3d5ba542513e48df359">[詳解]</a><br /></td></tr>
+<tr class="separator:a87f4d1399d49e3d5ba542513e48df359 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989f1301981ec9077aa29eefb78e5fe1 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a989f1301981ec9077aa29eefb78e5fe1">operator=</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;num)</td></tr>
+<tr class="memdesc:a989f1301981ec9077aa29eefb78e5fe1 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型の代入を行うオペレータ.  <a href="classTFHEIntegerCore.html#a989f1301981ec9077aa29eefb78e5fe1">[詳解]</a><br /></td></tr>
+<tr class="separator:a989f1301981ec9077aa29eefb78e5fe1 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc66061eb37a7b4c29f15b6cea63b003 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#abc66061eb37a7b4c29f15b6cea63b003">operator+</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:abc66061eb37a7b4c29f15b6cea63b003 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で加算を行うオペレータ.  <a href="classTFHEIntegerCore.html#abc66061eb37a7b4c29f15b6cea63b003">[詳解]</a><br /></td></tr>
+<tr class="separator:abc66061eb37a7b4c29f15b6cea63b003 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186958693c8e49a1c904c1abdfeace10 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a186958693c8e49a1c904c1abdfeace10">operator-</a> ()</td></tr>
+<tr class="memdesc:a186958693c8e49a1c904c1abdfeace10 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型の反数を返すオペレータ.  <a href="classTFHEIntegerCore.html#a186958693c8e49a1c904c1abdfeace10">[詳解]</a><br /></td></tr>
+<tr class="separator:a186958693c8e49a1c904c1abdfeace10 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183e00f95485c368362288360c102237 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a183e00f95485c368362288360c102237">operator-</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a183e00f95485c368362288360c102237 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で減算を行うオペレータ.  <a href="classTFHEIntegerCore.html#a183e00f95485c368362288360c102237">[詳解]</a><br /></td></tr>
+<tr class="separator:a183e00f95485c368362288360c102237 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2eeba90324a971cfcf37ed476bcabd inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a1d2eeba90324a971cfcf37ed476bcabd">operator*</a> (const <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a1d2eeba90324a971cfcf37ed476bcabd inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で真理値がtrueならば現在値をfalseならば0を返すオペレータ.  <a href="classTFHEIntegerCore.html#a1d2eeba90324a971cfcf37ed476bcabd">[詳解]</a><br /></td></tr>
+<tr class="separator:a1d2eeba90324a971cfcf37ed476bcabd inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ad9361c6f2fcfc24b4307265af55ed inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a94ad9361c6f2fcfc24b4307265af55ed">operator*</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a94ad9361c6f2fcfc24b4307265af55ed inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で乗算を行うオペレータ.  <a href="classTFHEIntegerCore.html#a94ad9361c6f2fcfc24b4307265af55ed">[詳解]</a><br /></td></tr>
+<tr class="separator:a94ad9361c6f2fcfc24b4307265af55ed inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95351275374493382e248756173d1d24 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a95351275374493382e248756173d1d24">operator/</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a95351275374493382e248756173d1d24 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で除算を行うオペレータ.  <a href="classTFHEIntegerCore.html#a95351275374493382e248756173d1d24">[詳解]</a><br /></td></tr>
+<tr class="separator:a95351275374493382e248756173d1d24 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaadb207c273272a65ad7591b6d0126 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#accaadb207c273272a65ad7591b6d0126">operator%</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:accaadb207c273272a65ad7591b6d0126 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で剰余演算を行うオペレータ.  <a href="classTFHEIntegerCore.html#accaadb207c273272a65ad7591b6d0126">[詳解]</a><br /></td></tr>
+<tr class="separator:accaadb207c273272a65ad7591b6d0126 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484e2dc324375213264dd9a5dc523126 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a484e2dc324375213264dd9a5dc523126">operator&lt;</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a484e2dc324375213264dd9a5dc523126 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で不等号(less than)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#a484e2dc324375213264dd9a5dc523126">[詳解]</a><br /></td></tr>
+<tr class="separator:a484e2dc324375213264dd9a5dc523126 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51609603edfc83e5175d71fead4d786a inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a51609603edfc83e5175d71fead4d786a">operator&lt;=</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a51609603edfc83e5175d71fead4d786a inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で等号付き不等号(less than or equal to)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#a51609603edfc83e5175d71fead4d786a">[詳解]</a><br /></td></tr>
+<tr class="separator:a51609603edfc83e5175d71fead4d786a inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2874db03ba09f21069c59cdebab7f989 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a2874db03ba09f21069c59cdebab7f989">operator&gt;</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a2874db03ba09f21069c59cdebab7f989 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で不等号(greater than)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#a2874db03ba09f21069c59cdebab7f989">[詳解]</a><br /></td></tr>
+<tr class="separator:a2874db03ba09f21069c59cdebab7f989 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bbbb7c987cf8fba80cbcf3c9aa98589 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a8bbbb7c987cf8fba80cbcf3c9aa98589">operator&gt;=</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a8bbbb7c987cf8fba80cbcf3c9aa98589 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で等号付き不等号(greater than or equal to)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#a8bbbb7c987cf8fba80cbcf3c9aa98589">[詳解]</a><br /></td></tr>
+<tr class="separator:a8bbbb7c987cf8fba80cbcf3c9aa98589 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b4f76186017106d71690cc2b012f94 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a01b4f76186017106d71690cc2b012f94">operator==</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:a01b4f76186017106d71690cc2b012f94 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で等号(eqaul to)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#a01b4f76186017106d71690cc2b012f94">[詳解]</a><br /></td></tr>
+<tr class="separator:a01b4f76186017106d71690cc2b012f94 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d4731e148dcfbadaf090e552b15277 inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#ad1d4731e148dcfbadaf090e552b15277">operator!=</a> (const <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> &amp;other)</td></tr>
+<tr class="memdesc:ad1d4731e148dcfbadaf090e552b15277 inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で等号否定(not equal to)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#ad1d4731e148dcfbadaf090e552b15277">[詳解]</a><br /></td></tr>
+<tr class="separator:ad1d4731e148dcfbadaf090e552b15277 inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42de0b35ca1cc7159ae7ab9ad6c5892e inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a42de0b35ca1cc7159ae7ab9ad6c5892e">operator&lt;</a> (const int &amp;other)</td></tr>
+<tr class="memdesc:a42de0b35ca1cc7159ae7ab9ad6c5892e inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型とint型で不等号(less than)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#a42de0b35ca1cc7159ae7ab9ad6c5892e">[詳解]</a><br /></td></tr>
+<tr class="separator:a42de0b35ca1cc7159ae7ab9ad6c5892e inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29940b70b8ad7e85bed79e790db3cfcb inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#a29940b70b8ad7e85bed79e790db3cfcb">operator&gt;</a> (const int &amp;other)</td></tr>
+<tr class="memdesc:a29940b70b8ad7e85bed79e790db3cfcb inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型で不等号(greater than)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#a29940b70b8ad7e85bed79e790db3cfcb">[詳解]</a><br /></td></tr>
+<tr class="separator:a29940b70b8ad7e85bed79e790db3cfcb inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5db4196d9457781a182d280398eb3f inherit pub_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEIntegerCore.html#acc5db4196d9457781a182d280398eb3f">operator==</a> (const int &amp;other)</td></tr>
+<tr class="memdesc:acc5db4196d9457781a182d280398eb3f inherit pub_methods_classTFHEIntegerCore"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの整数型とint型で等号(eqaul to)の判定を行うオペレータ.  <a href="classTFHEIntegerCore.html#acc5db4196d9457781a182d280398eb3f">[詳解]</a><br /></td></tr>
+<tr class="separator:acc5db4196d9457781a182d280398eb3f inherit pub_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+フレンド</h2></td></tr>
+<tr class="memitem:a6f50bc270a3a0806ffd8cdddfa57f074"><td class="memItemLeft" align="right" valign="top"><a id="a6f50bc270a3a0806ffd8cdddfa57f074"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>TFHEArray&lt; TFHEInt32 &gt;</b></td></tr>
+<tr class="separator:a6f50bc270a3a0806ffd8cdddfa57f074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_attribs_classTFHEIntegerCore"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classTFHEIntegerCore')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:a5c5259e34219a40c0aee6c724e5a3606 inherit pub_attribs_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a5c5259e34219a40c0aee6c724e5a3606"></a>
+<a class="el" href="classTFHEBits.html">TFHEBits</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b></td></tr>
+<tr class="separator:a5c5259e34219a40c0aee6c724e5a3606 inherit pub_attribs_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classTFHEInteger"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classTFHEInteger')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEInteger.html">TFHEInteger&lt; 32 &gt;</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:ad598cef4d70f2e5709ad53bf6bfb5408 inherit pro_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top"><a id="ad598cef4d70f2e5709ad53bf6bfb5408"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>save_raw</b> (FILE *fp) override</td></tr>
+<tr class="separator:ad598cef4d70f2e5709ad53bf6bfb5408 inherit pro_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad44df7db0dcfda4543d32bbd3383fcb inherit pro_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top"><a id="aad44df7db0dcfda4543d32bbd3383fcb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>load_raw</b> (FILE *fp) override</td></tr>
+<tr class="separator:aad44df7db0dcfda4543d32bbd3383fcb inherit pro_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classTFHEIntegerCore"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classTFHEIntegerCore')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a2c45f54ad8ce05a558e0abf07d7b51f8 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a2c45f54ad8ce05a558e0abf07d7b51f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>check_division_byZero</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value)</td></tr>
+<tr class="separator:a2c45f54ad8ce05a558e0abf07d7b51f8 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508cf9741f374ecc807daabe57795380 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a508cf9741f374ecc807daabe57795380"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>check_overflow_add</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:a508cf9741f374ecc807daabe57795380 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6818bf0c81e1b89aff78d84b3666da inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a0d6818bf0c81e1b89aff78d84b3666da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>check_overflow_sub</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:a0d6818bf0c81e1b89aff78d84b3666da inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3870d531f22135630f18b52a9b711b inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="abe3870d531f22135630f18b52a9b711b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>check_overflow_mul</b> ()</td></tr>
+<tr class="separator:abe3870d531f22135630f18b52a9b711b inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b77fde366598a5beac85637ca00bf8f inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a7b77fde366598a5beac85637ca00bf8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>check_error</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value)</td></tr>
+<tr class="separator:a7b77fde366598a5beac85637ca00bf8f inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f00855087c7e364db2dc877502726b inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a52f00855087c7e364db2dc877502726b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>check_decrypt_error</b> ()</td></tr>
+<tr class="separator:a52f00855087c7e364db2dc877502726b inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea1f943642937d429d507d364c26d74 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a8ea1f943642937d429d507d364c26d74"></a>
+<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:a8ea1f943642937d429d507d364c26d74 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8843ef06fa50968137119bd21362548 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="ad8843ef06fa50968137119bd21362548"></a>
+<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>minus</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value)</td></tr>
+<tr class="separator:ad8843ef06fa50968137119bd21362548 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d55199a74faf1d96932d5d976da50f inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a24d55199a74faf1d96932d5d976da50f"></a>
+<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sub</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:a24d55199a74faf1d96932d5d976da50f inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831b88dbe41057296df3088e5f6a3c0a inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a831b88dbe41057296df3088e5f6a3c0a"></a>
+<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mul</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2)</td></tr>
+<tr class="separator:a831b88dbe41057296df3088e5f6a3c0a inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8313a778f7a26f6cc9ea5cc482d8cf8 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="ac8313a778f7a26f6cc9ea5cc482d8cf8"></a>
+<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mul</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:ac8313a778f7a26f6cc9ea5cc482d8cf8 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab201b85c9c9882c50c5c132399febbaa inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="ab201b85c9c9882c50c5c132399febbaa"></a>
+<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>div</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:ab201b85c9c9882c50c5c132399febbaa inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac919a4a82f42fe42e4bfe625c9c03b6 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="aac919a4a82f42fe42e4bfe625c9c03b6"></a>
+<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mod</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:aac919a4a82f42fe42e4bfe625c9c03b6 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47b907441ecbfeed5bf45281c2e54f8 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="aa47b907441ecbfeed5bf45281c2e54f8"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lt</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:aa47b907441ecbfeed5bf45281c2e54f8 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0397ce73abd77952946baff18a3e140c inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a0397ce73abd77952946baff18a3e140c"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ltoet</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:a0397ce73abd77952946baff18a3e140c inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23fd3f0464b6026f78b151b28d84591 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="af23fd3f0464b6026f78b151b28d84591"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>gt</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:af23fd3f0464b6026f78b151b28d84591 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041e6159bd413fa1875936d8cde170ab inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a041e6159bd413fa1875936d8cde170ab"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>gtoet</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:a041e6159bd413fa1875936d8cde170ab inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e2da40bc2b552eec9ffaf334e8cda5 inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a44e2da40bc2b552eec9ffaf334e8cda5"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>et</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:a44e2da40bc2b552eec9ffaf334e8cda5 inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe77082c504b5417586499d55c655af inherit pro_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a3fe77082c504b5417586499d55c655af"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>net</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value1, <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value2)</td></tr>
+<tr class="separator:a3fe77082c504b5417586499d55c655af inherit pro_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classTFHEInteger"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTFHEInteger')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEInteger.html">TFHEInteger&lt; 32 &gt;</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:a92d6a170a2270f520316dfdef86cd9ff inherit pro_static_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top"><a id="a92d6a170a2270f520316dfdef86cd9ff"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>save_option_forArray</b> (FILE *fp)</td></tr>
+<tr class="separator:a92d6a170a2270f520316dfdef86cd9ff inherit pro_static_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1ff37a7d337ca35c1b2429875d5c7f inherit pro_static_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top"><a id="a1d1ff37a7d337ca35c1b2429875d5c7f"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>array_size</b> (int shape_size, int array_size)</td></tr>
+<tr class="separator:a1d1ff37a7d337ca35c1b2429875d5c7f inherit pro_static_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cf5252aa59c7da34519802702c95eb inherit pro_static_methods_classTFHEInteger"><td class="memItemLeft" align="right" valign="top"><a id="af7cf5252aa59c7da34519802702c95eb"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>array_option_num</b> ()</td></tr>
+<tr class="separator:af7cf5252aa59c7da34519802702c95eb inherit pro_static_methods_classTFHEInteger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classTFHEIntegerCore"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTFHEIntegerCore')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:aca1aaf3bca51ceac6e2d5fdbd9c0e5e1 inherit pro_static_methods_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="aca1aaf3bca51ceac6e2d5fdbd9c0e5e1"></a>
+static <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>shift</b> (<a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> value, int shift)</td></tr>
+<tr class="separator:aca1aaf3bca51ceac6e2d5fdbd9c0e5e1 inherit pro_static_methods_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classTFHEKeySet"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTFHEKeySet')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEKeySet.html">TFHEKeySet</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingParameterSet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">parameters</a> ()</td></tr>
+<tr class="memdesc:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingParameterSet*を返すメソッド.  <a href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">[詳解]</a><br /></td></tr>
+<tr class="separator:a9f7ba38f07fe21a125b3fe201b5ae8e5 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingCloudKeySet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">cloud_key</a> ()</td></tr>
+<tr class="memdesc:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingCloudKeySet*を返すメソッド.  <a href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">[詳解]</a><br /></td></tr>
+<tr class="separator:a42147024080eb883d3191c56b88df811 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top">static const TFheGateBootstrappingSecretKeySet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">secret_key</a> ()</td></tr>
+<tr class="memdesc:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFheGateBootstrappingSecretKeySet*を返すメソッド.  <a href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">[詳解]</a><br /></td></tr>
+<tr class="separator:a00e824da20fd4ee46e37af639d1e5784 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a3c95fe0632a477e18af69f268cd59ed8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a3c95fe0632a477e18af69f268cd59ed8">create_new_keyset</a> (int minimum_lambda)</td></tr>
+<tr class="memdesc:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵,クラウド鍵,パラメータを作成するメソッド. <br /></td></tr>
+<tr class="separator:a3c95fe0632a477e18af69f268cd59ed8 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1a4c09c20004d424d126b1e3b96e45 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="ada1a4c09c20004d424d126b1e3b96e45"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>set_seed</b> (uint32_t *values, int size)</td></tr>
+<tr class="separator:ada1a4c09c20004d424d126b1e3b96e45 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="aeb8549e62c9aa4d77aec48eacfdbb025"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#aeb8549e62c9aa4d77aec48eacfdbb025">load_parameters</a> (const char *path)</td></tr>
+<tr class="memdesc:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのパラメータを読み込むメソッド. <br /></td></tr>
+<tr class="separator:aeb8549e62c9aa4d77aec48eacfdbb025 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a3e35bec0fc09b7876569d25f066b7920"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a3e35bec0fc09b7876569d25f066b7920">load_cloud_key</a> (const char *path)</td></tr>
+<tr class="memdesc:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのクラウド鍵を読み込むメソッド. <br /></td></tr>
+<tr class="separator:a3e35bec0fc09b7876569d25f066b7920 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="ad324eaa3be302b3e4c033a4ca2064a7b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#ad324eaa3be302b3e4c033a4ca2064a7b">load_secret_key</a> (const char *path)</td></tr>
+<tr class="memdesc:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵を読み込むメソッド. <br /></td></tr>
+<tr class="separator:ad324eaa3be302b3e4c033a4ca2064a7b inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a61b41fb319193ea54811e892f70e9348"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a61b41fb319193ea54811e892f70e9348">save_parameters</a> (const char *path)</td></tr>
+<tr class="memdesc:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのパラメータをファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:a61b41fb319193ea54811e892f70e9348 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="a5e8dd9b8903f1c4ecb05ea8e10e5c35f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#a5e8dd9b8903f1c4ecb05ea8e10e5c35f">save_cloud_key</a> (const char *path)</td></tr>
+<tr class="memdesc:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのクラウド鍵をファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:a5e8dd9b8903f1c4ecb05ea8e10e5c35f inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="memItemLeft" align="right" valign="top"><a id="abee9efbf4c03d8ce5c12aac885b8a281"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEKeySet.html#abee9efbf4c03d8ce5c12aac885b8a281">save_secret_key</a> (const char *path)</td></tr>
+<tr class="memdesc:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEの秘密鍵をファイルに保存するメソッド. <br /></td></tr>
+<tr class="separator:abee9efbf4c03d8ce5c12aac885b8a281 inherit pro_static_methods_classTFHEKeySet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classTFHEIO"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTFHEIO')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEIO.html">TFHEIO</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:a33e89a960095e6a29b63dcce146c6b21 inherit pro_static_methods_classTFHEIO"><td class="memItemLeft" align="right" valign="top"><a id="a33e89a960095e6a29b63dcce146c6b21"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>find_file_pointer</b> (const char *path, int id, long result[3])</td></tr>
+<tr class="separator:a33e89a960095e6a29b63dcce146c6b21 inherit pro_static_methods_classTFHEIO"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf10232741475802811aae2441f92125 inherit pro_static_methods_classTFHEIO"><td class="memItemLeft" align="right" valign="top"><a id="aaf10232741475802811aae2441f92125"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_from_file</b> (const char *path, long pos[3])</td></tr>
+<tr class="separator:aaf10232741475802811aae2441f92125 inherit pro_static_methods_classTFHEIO"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classTFHEIntegerCore"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classTFHEIntegerCore')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classTFHEIntegerCore.html">TFHEIntegerCore</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a92d740b6c6ee62e87790ee806eee3905 inherit pro_attribs_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a92d740b6c6ee62e87790ee806eee3905"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>overflow_error_flag</b></td></tr>
+<tr class="separator:a92d740b6c6ee62e87790ee806eee3905 inherit pro_attribs_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e98b0266284a818278729217d7a720 inherit pro_attribs_classTFHEIntegerCore"><td class="memItemLeft" align="right" valign="top"><a id="a58e98b0266284a818278729217d7a720"></a>
+<a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>division_byZero_error_flag</b></td></tr>
+<tr class="separator:a58e98b0266284a818278729217d7a720 inherit pro_attribs_classTFHEIntegerCore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>TFHEの32bitsの整数型のクラス. </p>
+</div><hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>src/include/type/integer/<a class="el" href="int32_8hpp_source.html">int32.hpp</a></li>
+<li>src/lib/type/integer/<a class="el" href="int32_8cpp.html">int32.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

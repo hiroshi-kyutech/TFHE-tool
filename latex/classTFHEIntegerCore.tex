@@ -1,0 +1,589 @@
+\hypertarget{classTFHEIntegerCore}{}\doxysection{T\+F\+H\+E\+Integer\+Core クラス}
+\label{classTFHEIntegerCore}\index{TFHEIntegerCore@{TFHEIntegerCore}}
+
+
+T\+F\+H\+Eの整数型のcoreクラス.  
+
+
+
+
+{\ttfamily \#include $<$integer\+\_\+core.\+hpp$>$}
+
+
+
+T\+F\+H\+E\+Integer\+Core の継承関係図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTFHEIntegerCore__inherit__graph}
+\end{center}
+\end{figure}
+
+
+T\+F\+H\+E\+Integer\+Core 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classTFHEIntegerCore__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_ac5fa22109b2a25e8c02fb14c5c93bf62}\label{classTFHEIntegerCore_ac5fa22109b2a25e8c02fb14c5c93bf62}} 
+{\bfseries T\+F\+H\+E\+Integer\+Core} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&elm, int nbelems)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a256b889346a3a185ddd454fbd26e4607}\label{classTFHEIntegerCore_a256b889346a3a185ddd454fbd26e4607}} 
+{\bfseries T\+F\+H\+E\+Integer\+Core} (int nbelems)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a26c77e9969178e9bd5989e528713f09f}\label{classTFHEIntegerCore_a26c77e9969178e9bd5989e528713f09f}} 
+{\bfseries T\+F\+H\+E\+Integer\+Core} (int nbelems, int number)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_ac66cadfdad2ebb5030da02857bd1d4b5}\label{classTFHEIntegerCore_ac66cadfdad2ebb5030da02857bd1d4b5}} 
+{\bfseries T\+F\+H\+E\+Integer\+Core} (int nbelems, const char $\ast$path, int id)
+\item 
+int \mbox{\hyperlink{classTFHEIntegerCore_aa82a52bcde16ced11649f7b4560daf17}{decrypt}} ()
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型を復号するメソッド. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTFHEIntegerCore_aed4dfbaad8584c5f7e0b2af7c3c8bbfe}{save}} (const char $\ast$path, int id)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型をファイルに保存するメソッド. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a32031002c7798e11bbe1219701764f14}{sign}} ()
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で符号を取得するメソッド. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a87f4d1399d49e3d5ba542513e48df359}{abs}} ()
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で絶対値を取得するメソッド. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \& \mbox{\hyperlink{classTFHEIntegerCore_a989f1301981ec9077aa29eefb78e5fe1}{operator=}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&num)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型の代入を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_abc66061eb37a7b4c29f15b6cea63b003}{operator+}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で加算を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a186958693c8e49a1c904c1abdfeace10}{operator-\/}} ()
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型の反数を返すオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a183e00f95485c368362288360c102237}{operator-\/}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で減算を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a1d2eeba90324a971cfcf37ed476bcabd}{operator$\ast$}} (const \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で真理値がtrueならば現在値をfalseならば0を返すオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a94ad9361c6f2fcfc24b4307265af55ed}{operator$\ast$}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で乗算を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a95351275374493382e248756173d1d24}{operator/}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で除算を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_accaadb207c273272a65ad7591b6d0126}{operator\%}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で剰余演算を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a484e2dc324375213264dd9a5dc523126}{operator$<$}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で不等号(less than)の判定を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a51609603edfc83e5175d71fead4d786a}{operator$<$=}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で等号付き不等号(less than or equal to)の判定を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a2874db03ba09f21069c59cdebab7f989}{operator$>$}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で不等号(greater than)の判定を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a8bbbb7c987cf8fba80cbcf3c9aa98589}{operator$>$=}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で等号付き不等号(greater than or equal to)の判定を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a01b4f76186017106d71690cc2b012f94}{operator==}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で等号(eqaul to)の判定を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_ad1d4731e148dcfbadaf090e552b15277}{operator!=}} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で等号否定(not equal to)の判定を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a42de0b35ca1cc7159ae7ab9ad6c5892e}{operator$<$}} (const int \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型とint型で不等号(less than)の判定を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_a29940b70b8ad7e85bed79e790db3cfcb}{operator$>$}} (const int \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型で不等号(greater than)の判定を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEIntegerCore_acc5db4196d9457781a182d280398eb3f}{operator==}} (const int \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの整数型とint型で等号(eqaul to)の判定を行うオペレータ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a5c5259e34219a40c0aee6c724e5a3606}\label{classTFHEIntegerCore_a5c5259e34219a40c0aee6c724e5a3606}} 
+\mbox{\hyperlink{classTFHEBits}{T\+F\+H\+E\+Bits}} {\bfseries bits}
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_aab1200dff807a5d4ad7cf049cf1548ce}\label{classTFHEIntegerCore_aab1200dff807a5d4ad7cf049cf1548ce}} 
+virtual void {\bfseries save\+\_\+raw} (F\+I\+LE $\ast$fp)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a4a759c635341651e58527d7bc2c830cd}\label{classTFHEIntegerCore_a4a759c635341651e58527d7bc2c830cd}} 
+virtual void {\bfseries load\+\_\+raw} (F\+I\+LE $\ast$fp)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a2c45f54ad8ce05a558e0abf07d7b51f8}\label{classTFHEIntegerCore_a2c45f54ad8ce05a558e0abf07d7b51f8}} 
+void {\bfseries check\+\_\+division\+\_\+by\+Zero} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a508cf9741f374ecc807daabe57795380}\label{classTFHEIntegerCore_a508cf9741f374ecc807daabe57795380}} 
+void {\bfseries check\+\_\+overflow\+\_\+add} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a0d6818bf0c81e1b89aff78d84b3666da}\label{classTFHEIntegerCore_a0d6818bf0c81e1b89aff78d84b3666da}} 
+void {\bfseries check\+\_\+overflow\+\_\+sub} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_abe3870d531f22135630f18b52a9b711b}\label{classTFHEIntegerCore_abe3870d531f22135630f18b52a9b711b}} 
+void {\bfseries check\+\_\+overflow\+\_\+mul} ()
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a7b77fde366598a5beac85637ca00bf8f}\label{classTFHEIntegerCore_a7b77fde366598a5beac85637ca00bf8f}} 
+void {\bfseries check\+\_\+error} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a52f00855087c7e364db2dc877502726b}\label{classTFHEIntegerCore_a52f00855087c7e364db2dc877502726b}} 
+void {\bfseries check\+\_\+decrypt\+\_\+error} ()
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a8ea1f943642937d429d507d364c26d74}\label{classTFHEIntegerCore_a8ea1f943642937d429d507d364c26d74}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries add} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_ad8843ef06fa50968137119bd21362548}\label{classTFHEIntegerCore_ad8843ef06fa50968137119bd21362548}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries minus} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a24d55199a74faf1d96932d5d976da50f}\label{classTFHEIntegerCore_a24d55199a74faf1d96932d5d976da50f}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries sub} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a831b88dbe41057296df3088e5f6a3c0a}\label{classTFHEIntegerCore_a831b88dbe41057296df3088e5f6a3c0a}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries mul} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_ac8313a778f7a26f6cc9ea5cc482d8cf8}\label{classTFHEIntegerCore_ac8313a778f7a26f6cc9ea5cc482d8cf8}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries mul} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_ab201b85c9c9882c50c5c132399febbaa}\label{classTFHEIntegerCore_ab201b85c9c9882c50c5c132399febbaa}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries div} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_aac919a4a82f42fe42e4bfe625c9c03b6}\label{classTFHEIntegerCore_aac919a4a82f42fe42e4bfe625c9c03b6}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries mod} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_aa47b907441ecbfeed5bf45281c2e54f8}\label{classTFHEIntegerCore_aa47b907441ecbfeed5bf45281c2e54f8}} 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} {\bfseries lt} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a0397ce73abd77952946baff18a3e140c}\label{classTFHEIntegerCore_a0397ce73abd77952946baff18a3e140c}} 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} {\bfseries ltoet} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_af23fd3f0464b6026f78b151b28d84591}\label{classTFHEIntegerCore_af23fd3f0464b6026f78b151b28d84591}} 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} {\bfseries gt} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a041e6159bd413fa1875936d8cde170ab}\label{classTFHEIntegerCore_a041e6159bd413fa1875936d8cde170ab}} 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} {\bfseries gtoet} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a44e2da40bc2b552eec9ffaf334e8cda5}\label{classTFHEIntegerCore_a44e2da40bc2b552eec9ffaf334e8cda5}} 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} {\bfseries et} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a3fe77082c504b5417586499d55c655af}\label{classTFHEIntegerCore_a3fe77082c504b5417586499d55c655af}} 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} {\bfseries net} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\end{DoxyCompactItemize}
+\doxysubsection*{静的限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_aca1aaf3bca51ceac6e2d5fdbd9c0e5e1}\label{classTFHEIntegerCore_aca1aaf3bca51ceac6e2d5fdbd9c0e5e1}} 
+static \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries shift} (\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value, int shift)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a92d740b6c6ee62e87790ee806eee3905}\label{classTFHEIntegerCore_a92d740b6c6ee62e87790ee806eee3905}} 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} {\bfseries overflow\+\_\+error\+\_\+flag}
+\item 
+\mbox{\Hypertarget{classTFHEIntegerCore_a58e98b0266284a818278729217d7a720}\label{classTFHEIntegerCore_a58e98b0266284a818278729217d7a720}} 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} {\bfseries division\+\_\+by\+Zero\+\_\+error\+\_\+flag}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+T\+F\+H\+Eの整数型のcoreクラス. 
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classTFHEIntegerCore_a87f4d1399d49e3d5ba542513e48df359}\label{classTFHEIntegerCore_a87f4d1399d49e3d5ba542513e48df359}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!abs@{abs}}
+\index{abs@{abs}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{abs()}{abs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::abs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で絶対値を取得するメソッド. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 絶対値 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_aa82a52bcde16ced11649f7b4560daf17}\label{classTFHEIntegerCore_aa82a52bcde16ced11649f7b4560daf17}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily int T\+F\+H\+E\+Integer\+Core\+::decrypt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型を復号するメソッド. 
+
+\begin{DoxyReturn}{戻り値}
+int 復号結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_ad1d4731e148dcfbadaf090e552b15277}\label{classTFHEIntegerCore_ad1d4731e148dcfbadaf090e552b15277}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で等号否定(not equal to)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_accaadb207c273272a65ad7591b6d0126}\label{classTFHEIntegerCore_accaadb207c273272a65ad7591b6d0126}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator\% (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で剰余演算を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 剰余演算結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a1d2eeba90324a971cfcf37ed476bcabd}\label{classTFHEIntegerCore_a1d2eeba90324a971cfcf37ed476bcabd}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で真理値がtrueならば現在値をfalseならば0を返すオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 現在値か0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a94ad9361c6f2fcfc24b4307265af55ed}\label{classTFHEIntegerCore_a94ad9361c6f2fcfc24b4307265af55ed}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で乗算を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 乗算結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_abc66061eb37a7b4c29f15b6cea63b003}\label{classTFHEIntegerCore_abc66061eb37a7b4c29f15b6cea63b003}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator+@{operator+}}
+\index{operator+@{operator+}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で加算を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 加算結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a186958693c8e49a1c904c1abdfeace10}\label{classTFHEIntegerCore_a186958693c8e49a1c904c1abdfeace10}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型の反数を返すオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 反数 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a183e00f95485c368362288360c102237}\label{classTFHEIntegerCore_a183e00f95485c368362288360c102237}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で減算を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 減算結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a95351275374493382e248756173d1d24}\label{classTFHEIntegerCore_a95351275374493382e248756173d1d24}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator/@{operator/}}
+\index{operator/@{operator/}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で除算を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 除算結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a42de0b35ca1cc7159ae7ab9ad6c5892e}\label{classTFHEIntegerCore_a42de0b35ca1cc7159ae7ab9ad6c5892e}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator$<$ (\begin{DoxyParamCaption}\item[{const int \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型とint型で不等号(less than)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a484e2dc324375213264dd9a5dc523126}\label{classTFHEIntegerCore_a484e2dc324375213264dd9a5dc523126}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で不等号(less than)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a51609603edfc83e5175d71fead4d786a}\label{classTFHEIntegerCore_a51609603edfc83e5175d71fead4d786a}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で等号付き不等号(less than or equal to)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a989f1301981ec9077aa29eefb78e5fe1}\label{classTFHEIntegerCore_a989f1301981ec9077aa29eefb78e5fe1}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator=@{operator=}}
+\index{operator=@{operator=}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \& T\+F\+H\+E\+Integer\+Core\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{num }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型の代入を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 代入結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_acc5db4196d9457781a182d280398eb3f}\label{classTFHEIntegerCore_acc5db4196d9457781a182d280398eb3f}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator==@{operator==}}
+\index{operator==@{operator==}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator== (\begin{DoxyParamCaption}\item[{const int \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型とint型で等号(eqaul to)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a01b4f76186017106d71690cc2b012f94}\label{classTFHEIntegerCore_a01b4f76186017106d71690cc2b012f94}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator==@{operator==}}
+\index{operator==@{operator==}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で等号(eqaul to)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a29940b70b8ad7e85bed79e790db3cfcb}\label{classTFHEIntegerCore_a29940b70b8ad7e85bed79e790db3cfcb}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator$>$ (\begin{DoxyParamCaption}\item[{const int \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で不等号(greater than)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a2874db03ba09f21069c59cdebab7f989}\label{classTFHEIntegerCore_a2874db03ba09f21069c59cdebab7f989}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で不等号(greater than)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_a8bbbb7c987cf8fba80cbcf3c9aa98589}\label{classTFHEIntegerCore_a8bbbb7c987cf8fba80cbcf3c9aa98589}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Integer\+Core\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で等号付き不等号(greater than or equal to)の判定を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 判定結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEIntegerCore_aed4dfbaad8584c5f7e0b2af7c3c8bbfe}\label{classTFHEIntegerCore_aed4dfbaad8584c5f7e0b2af7c3c8bbfe}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!save@{save}}
+\index{save@{save}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void T\+F\+H\+E\+Integer\+Core\+::save (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型をファイルに保存するメソッド. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em const} & char$\ast$ path(保存先のパス) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & id(識別用の\+ID) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTFHEIntegerCore_a32031002c7798e11bbe1219701764f14}\label{classTFHEIntegerCore_a32031002c7798e11bbe1219701764f14}} 
+\index{TFHEIntegerCore@{TFHEIntegerCore}!sign@{sign}}
+\index{sign@{sign}!TFHEIntegerCore@{TFHEIntegerCore}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} T\+F\+H\+E\+Integer\+Core\+::sign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの整数型で符号を取得するメソッド. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}}} & this(呼び出し元のポインタ) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core(\+T\+F\+H\+E\+Integer)}} 符号(1 or -\/1) 
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+src/include/type/core/\mbox{\hyperlink{integer__core_8hpp}{integer\+\_\+core.\+hpp}}\item 
+src/lib/type/core/\mbox{\hyperlink{integer__core_8cpp}{integer\+\_\+core.\+cpp}}\end{DoxyCompactItemize}

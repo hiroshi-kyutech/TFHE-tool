@@ -1,0 +1,109 @@
+\hypertarget{classTFHEKeySet}{}\doxysection{T\+F\+H\+E\+Key\+Set クラス}
+\label{classTFHEKeySet}\index{TFHEKeySet@{TFHEKeySet}}
+
+
+T\+F\+H\+Eの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス.  
+
+
+
+
+{\ttfamily \#include $<$keyset.\+hpp$>$}
+
+
+
+T\+F\+H\+E\+Key\+Set の継承関係図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTFHEKeySet__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEKeySet_a3c95fe0632a477e18af69f268cd59ed8}\label{classTFHEKeySet_a3c95fe0632a477e18af69f268cd59ed8}} 
+static void \mbox{\hyperlink{classTFHEKeySet_a3c95fe0632a477e18af69f268cd59ed8}{create\+\_\+new\+\_\+keyset}} (int minimum\+\_\+lambda)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの秘密鍵,クラウド鍵,パラメータを作成するメソッド. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTFHEKeySet_ada1a4c09c20004d424d126b1e3b96e45}\label{classTFHEKeySet_ada1a4c09c20004d424d126b1e3b96e45}} 
+static void {\bfseries set\+\_\+seed} (uint32\+\_\+t $\ast$values, int size)
+\item 
+\mbox{\Hypertarget{classTFHEKeySet_aeb8549e62c9aa4d77aec48eacfdbb025}\label{classTFHEKeySet_aeb8549e62c9aa4d77aec48eacfdbb025}} 
+static void \mbox{\hyperlink{classTFHEKeySet_aeb8549e62c9aa4d77aec48eacfdbb025}{load\+\_\+parameters}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eのパラメータを読み込むメソッド. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTFHEKeySet_a3e35bec0fc09b7876569d25f066b7920}\label{classTFHEKeySet_a3e35bec0fc09b7876569d25f066b7920}} 
+static void \mbox{\hyperlink{classTFHEKeySet_a3e35bec0fc09b7876569d25f066b7920}{load\+\_\+cloud\+\_\+key}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eのクラウド鍵を読み込むメソッド. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTFHEKeySet_ad324eaa3be302b3e4c033a4ca2064a7b}\label{classTFHEKeySet_ad324eaa3be302b3e4c033a4ca2064a7b}} 
+static void \mbox{\hyperlink{classTFHEKeySet_ad324eaa3be302b3e4c033a4ca2064a7b}{load\+\_\+secret\+\_\+key}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの秘密鍵を読み込むメソッド. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTFHEKeySet_a61b41fb319193ea54811e892f70e9348}\label{classTFHEKeySet_a61b41fb319193ea54811e892f70e9348}} 
+static void \mbox{\hyperlink{classTFHEKeySet_a61b41fb319193ea54811e892f70e9348}{save\+\_\+parameters}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eのパラメータをファイルに保存するメソッド. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTFHEKeySet_a5e8dd9b8903f1c4ecb05ea8e10e5c35f}\label{classTFHEKeySet_a5e8dd9b8903f1c4ecb05ea8e10e5c35f}} 
+static void \mbox{\hyperlink{classTFHEKeySet_a5e8dd9b8903f1c4ecb05ea8e10e5c35f}{save\+\_\+cloud\+\_\+key}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eのクラウド鍵をファイルに保存するメソッド. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTFHEKeySet_abee9efbf4c03d8ce5c12aac885b8a281}\label{classTFHEKeySet_abee9efbf4c03d8ce5c12aac885b8a281}} 
+static void \mbox{\hyperlink{classTFHEKeySet_abee9efbf4c03d8ce5c12aac885b8a281}{save\+\_\+secret\+\_\+key}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの秘密鍵をファイルに保存するメソッド. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静的限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static const T\+Fhe\+Gate\+Bootstrapping\+Parameter\+Set $\ast$ \mbox{\hyperlink{classTFHEKeySet_a9f7ba38f07fe21a125b3fe201b5ae8e5}{parameters}} ()
+\begin{DoxyCompactList}\small\item\em T\+Fhe\+Gate\+Bootstrapping\+Parameter\+Set$\ast$を返すメソッド. \end{DoxyCompactList}\item 
+static const T\+Fhe\+Gate\+Bootstrapping\+Cloud\+Key\+Set $\ast$ \mbox{\hyperlink{classTFHEKeySet_a42147024080eb883d3191c56b88df811}{cloud\+\_\+key}} ()
+\begin{DoxyCompactList}\small\item\em T\+Fhe\+Gate\+Bootstrapping\+Cloud\+Key\+Set$\ast$を返すメソッド. \end{DoxyCompactList}\item 
+static const T\+Fhe\+Gate\+Bootstrapping\+Secret\+Key\+Set $\ast$ \mbox{\hyperlink{classTFHEKeySet_a00e824da20fd4ee46e37af639d1e5784}{secret\+\_\+key}} ()
+\begin{DoxyCompactList}\small\item\em T\+Fhe\+Gate\+Bootstrapping\+Secret\+Key\+Set$\ast$を返すメソッド. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+T\+F\+H\+Eの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス. 
+
+パラメータは秘密鍵,クラウド鍵に依存, クラウド鍵は秘密鍵に依存している. 
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classTFHEKeySet_a42147024080eb883d3191c56b88df811}\label{classTFHEKeySet_a42147024080eb883d3191c56b88df811}} 
+\index{TFHEKeySet@{TFHEKeySet}!cloud\_key@{cloud\_key}}
+\index{cloud\_key@{cloud\_key}!TFHEKeySet@{TFHEKeySet}}
+\doxysubsubsection{\texorpdfstring{cloud\_key()}{cloud\_key()}}
+{\footnotesize\ttfamily static const T\+Fhe\+Gate\+Bootstrapping\+Cloud\+Key\+Set$\ast$ T\+F\+H\+E\+Key\+Set\+::cloud\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+T\+Fhe\+Gate\+Bootstrapping\+Cloud\+Key\+Set$\ast$を返すメソッド. 
+
+\begin{DoxyReturn}{戻り値}
+T\+Fhe\+Gate\+Bootstrapping\+Cloud\+Key\+Set$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEKeySet_a9f7ba38f07fe21a125b3fe201b5ae8e5}\label{classTFHEKeySet_a9f7ba38f07fe21a125b3fe201b5ae8e5}} 
+\index{TFHEKeySet@{TFHEKeySet}!parameters@{parameters}}
+\index{parameters@{parameters}!TFHEKeySet@{TFHEKeySet}}
+\doxysubsubsection{\texorpdfstring{parameters()}{parameters()}}
+{\footnotesize\ttfamily static const T\+Fhe\+Gate\+Bootstrapping\+Parameter\+Set$\ast$ T\+F\+H\+E\+Key\+Set\+::parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+T\+Fhe\+Gate\+Bootstrapping\+Parameter\+Set$\ast$を返すメソッド. 
+
+\begin{DoxyReturn}{戻り値}
+T\+Fhe\+Gate\+Bootstrapping\+Parameter\+Set$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEKeySet_a00e824da20fd4ee46e37af639d1e5784}\label{classTFHEKeySet_a00e824da20fd4ee46e37af639d1e5784}} 
+\index{TFHEKeySet@{TFHEKeySet}!secret\_key@{secret\_key}}
+\index{secret\_key@{secret\_key}!TFHEKeySet@{TFHEKeySet}}
+\doxysubsubsection{\texorpdfstring{secret\_key()}{secret\_key()}}
+{\footnotesize\ttfamily static const T\+Fhe\+Gate\+Bootstrapping\+Secret\+Key\+Set$\ast$ T\+F\+H\+E\+Key\+Set\+::secret\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+T\+Fhe\+Gate\+Bootstrapping\+Secret\+Key\+Set$\ast$を返すメソッド. 
+
+\begin{DoxyReturn}{戻り値}
+T\+Fhe\+Gate\+Bootstrapping\+Secret\+Key\+Set$\ast$ 
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+src/include/type/keyset/\mbox{\hyperlink{keyset_8hpp}{keyset.\+hpp}}\item 
+src/lib/type/keyset/\mbox{\hyperlink{keyset_8cpp}{keyset.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tfhe_libex: src/include/type/core/bool_core.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tfhe_libex
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_56fb494bfda9b75d921f5a73f9bb6191.html">type</a></li><li class="navelem"><a class="el" href="dir_6bb5e10cf9dc3a24a36980ba17e4aa69.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a>  </div>
+  <div class="headertitle">
+<div class="title">bool_core.hpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TFHEのBool型のcoreクラス.  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="io_8hpp_source.html">../../operations/io/io.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bit_8hpp_source.html">../raw/bit.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="type_8hpp_source.html">../type.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+bool_core.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="bool__core_8hpp__incl.png" border="0" usemap="#src_2include_2type_2core_2bool__core_8hpp" alt=""/></div>
+<map name="src_2include_2type_2core_2bool__core_8hpp" id="src_2include_2type_2core_2bool__core_8hpp">
+<area shape="rect" title="TFHEのBool型のcoreクラス." alt="" coords="452,5,609,47"/>
+<area shape="rect" href="io_8hpp.html" title="ファイル入出力の共通処理のクラス." alt="" coords="323,95,453,136"/>
+<area shape="rect" href="bit_8hpp.html" title="単数のLweSample*をwrapするクラス." alt="" coords="477,102,584,129"/>
+<area shape="rect" href="type_8hpp.html" title="クラスに固有の番号を振り分けする列挙型." alt="" coords="608,102,699,129"/>
+<area shape="rect" href="keyset_8hpp.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するクラス." alt="" coords="360,184,557,211"/>
+<area shape="rect" href="common_8hpp.html" title="std.hとtfhe_lib.hのinclude." alt="" coords="363,259,555,285"/>
+<area shape="rect" href="std_8hpp.html" title="標準ライブラリのinclude." alt="" coords="282,333,353,360"/>
+<area shape="rect" href="tfhe__lib_8hpp.html" title="tfhe(https://github.com/tfhe/tfhe)のinclude." alt="" coords="552,333,651,360"/>
+<area shape="rect" title=" " alt="" coords="5,408,72,435"/>
+<area shape="rect" title=" " alt="" coords="97,408,159,435"/>
+<area shape="rect" title=" " alt="" coords="183,408,254,435"/>
+<area shape="rect" title=" " alt="" coords="279,408,356,435"/>
+<area shape="rect" title=" " alt="" coords="380,408,444,435"/>
+<area shape="rect" title=" " alt="" coords="469,408,531,435"/>
+<area shape="rect" title=" " alt="" coords="556,408,647,435"/>
+<area shape="rect" title=" " alt="" coords="671,408,780,435"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="bool__core_8hpp__dep__incl.png" border="0" usemap="#src_2include_2type_2core_2bool__core_8hppdep" alt=""/></div>
+<map name="src_2include_2type_2core_2bool__core_8hppdep" id="src_2include_2type_2core_2bool__core_8hppdep">
+<area shape="rect" title="TFHEのBool型のcoreクラス." alt="" coords="1778,5,1935,47"/>
+<area shape="rect" href="mux_8hpp.html" title="条件演算子(multiplexer)の関数." alt="" coords="1614,95,1819,136"/>
+<area shape="rect" href="integer__core_8hpp.html" title="TFHEの整数型のcoreクラス." alt="" coords="1778,184,1935,225"/>
+<area shape="rect" href="bool__core_8cpp.html" title="TFHEの真理値型のcoreクラスの実装." alt="" coords="1895,95,2053,136"/>
+<area shape="rect" href="tfhe__libex_8hpp.html" title="提供用." alt="" coords="2022,459,2211,486"/>
+<area shape="rect" href="alice__array_8cpp.html" title="TFHEの多次元配列の暗号化と保存のテスト." alt="" coords="5,541,148,583"/>
+<area shape="rect" href="cloud__bitonic__mergesort_8cpp.html" title="TFHEのbitonic_mergesortのテスト." alt="" coords="172,541,347,583"/>
+<area shape="rect" href="cloud__oem__sort_8cpp.html" title="TFHEのoem_sortのテスト." alt="" coords="371,541,518,583"/>
+<area shape="rect" href="verif__array_8cpp.html" title="TFHEの多次元配列の復号と読み込みのテスト." alt="" coords="543,541,685,583"/>
+<area shape="rect" href="alice__bool_8cpp.html" title="TFHEの真理値型の暗号化と保存のテスト." alt="" coords="709,541,847,583"/>
+<area shape="rect" href="cloud__and_8cpp.html" title="TFHEの真理値型の論理積のテスト." alt="" coords="871,541,1013,583"/>
+<area shape="rect" href="cloud__mux__bool_8cpp.html" title="TFHEの真理値型の条件演算子のテスト." alt="" coords="1037,541,1178,583"/>
+<area shape="rect" href="cloud__not_8cpp.html" title="TFHEの真理値型の否定のテスト." alt="" coords="1202,541,1343,583"/>
+<area shape="rect" href="cloud__or_8cpp.html" title="TFHEの真理値型の論理和のテスト." alt="" coords="1367,541,1509,583"/>
+<area shape="rect" href="cloud__xor_8cpp.html" title="TFHEの真理値型の排他的論理和のテスト." alt="" coords="1533,541,1674,583"/>
+<area shape="rect" href="verif__bool_8cpp.html" title="TFHEの真理値型の復号と読み込みのテスト." alt="" coords="1698,541,1834,583"/>
+<area shape="rect" href="alice__integer_8cpp.html" title="TFHEの整数型の暗号化と保存のテスト." alt="" coords="1858,541,2013,583"/>
+<area shape="rect" href="cloud__add_8cpp.html" title="TFHEの整数型の加算のテスト." alt="" coords="2037,541,2196,583"/>
+<area shape="rect" href="cloud__div_8cpp.html" title="TFHEの整数型の除算のテスト." alt="" coords="2220,541,2379,583"/>
+<area shape="rect" href="cloud__equal__to_8cpp.html" title="TFHEの整数型の等号のテスト." alt="" coords="2403,541,2561,583"/>
+<area shape="rect" href="cloud__less__than_8cpp.html" title="TFHEの整数型の不等号のテスト." alt="" coords="2585,541,2744,583"/>
+<area shape="rect" href="cloud__minus_8cpp.html" title="TFHEの整数型の符号反転のテスト." alt="" coords="2768,541,2927,583"/>
+<area shape="rect" href="cloud__mod_8cpp.html" title="TFHEの整数型の剰余演算のテスト." alt="" coords="2951,541,3109,583"/>
+<area shape="rect" href="cloud__mul_8cpp.html" title="TFHEの整数型の乗算のテスト." alt="" coords="3133,541,3292,583"/>
+<area shape="rect" href="cloud__mux__integer_8cpp.html" title="TFHEの整数型の条件演算子のテスト." alt="" coords="3316,541,3475,583"/>
+<area shape="rect" href="cloud__sign_8cpp.html" title="TFHEの整数型の絶対値の取得のテスト." alt="" coords="3499,541,3657,583"/>
+<area shape="rect" href="cloud__sub_8cpp.html" title="TFHEの整数型の減算のテスト." alt="" coords="3681,541,3840,583"/>
+<area shape="rect" href="test__error__check_8cpp.html" title="TFHEの整数型の0除算とオーバーフローのエラーチェックのテスト." alt="" coords="3865,541,4014,583"/>
+<area shape="rect" href="verif__bool__integer_8cpp.html" title="TFHEの整数型の演算結果(真理値型)の復号と読み込みのテスト." alt="" coords="4038,541,4193,583"/>
+<area shape="rect" href="verif__integer_8cpp.html" title="TFHEの整数型の演算結果(整数型)の復号と読み込みのテスト." alt="" coords="4217,541,4371,583"/>
+<area shape="rect" href="bool_8hpp.html" title="TFHEの真理値型のクラス." alt="" coords="1866,273,2023,315"/>
+<area shape="rect" href="integer_8hpp.html" title="TFHEの整数型のクラス." alt="" coords="2080,273,2255,315"/>
+<area shape="rect" href="integer__core_8cpp.html" title="TFHEの整数型のcoreクラスの実装." alt="" coords="1666,273,1842,315"/>
+<area shape="rect" href="bool_8cpp.html" title="TFHEの真理値型のクラスの実装." alt="" coords="1693,370,1879,397"/>
+<area shape="rect" href="int16_8hpp.html" title="TFHEの16bitsの整数型のクラス." alt="" coords="2205,363,2380,404"/>
+<area shape="rect" href="int32_8hpp.html" title="TFHEの32bitsの整数型のクラス." alt="" coords="2404,363,2579,404"/>
+<area shape="rect" href="int8_8hpp.html" title="TFHEの8bitsの整数型のクラス." alt="" coords="1955,363,2129,404"/>
+<area shape="rect" href="int16_8cpp.html" title="TFHEの16bitsの整数型のクラスの実装." alt="" coords="2235,452,2379,493"/>
+<area shape="rect" href="int32_8cpp.html" title="TFHEの32bitsの整数型のクラスの実装." alt="" coords="2419,452,2563,493"/>
+<area shape="rect" href="int8_8cpp.html" title="TFHEの8bitsの整数型のクラスの実装." alt="" coords="1854,452,1998,493"/>
+</map>
+</div>
+</div>
+<p><a href="bool__core_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTFHEBoolCore.html">TFHEBoolCore</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TFHEのBool型のcoreクラス.  <a href="classTFHEBoolCore.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>TFHEのBool型のcoreクラス. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

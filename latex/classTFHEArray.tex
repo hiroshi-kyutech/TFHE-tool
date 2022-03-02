@@ -1,0 +1,175 @@
+\hypertarget{classTFHEArray}{}\doxysection{T\+F\+H\+E\+Array$<$ Type $>$ クラステンプレート}
+\label{classTFHEArray}\index{TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}}
+
+
+T\+F\+H\+Eの多次元配列のクラス.  
+
+
+
+
+{\ttfamily \#include $<$array.\+hpp$>$}
+
+
+
+T\+F\+H\+E\+Array$<$ Type $>$ の継承関係図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classTFHEArray__inherit__graph}
+\end{center}
+\end{figure}
+
+
+T\+F\+H\+E\+Array$<$ Type $>$ 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classTFHEArray__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename Alloc  = std\+::allocator$<$\+T$>$$>$ }\\\mbox{\hyperlink{classTFHEArray_a3e38e8f81af4d557f9307393fadf63c3}{T\+F\+H\+E\+Array}} (std\+::vector$<$ T, Alloc $>$ vec)
+\begin{DoxyCompactList}\small\item\em 多次元のstd\+::vector vecとその形を示すstd\+::vector$<$int$>$ array\+\_\+shapeから\+T\+F\+H\+E\+Arrayを作成するコンストラクタ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTFHEArray_aad2d163a2607e7288d46c1dfeec161ac}\label{classTFHEArray_aad2d163a2607e7288d46c1dfeec161ac}} 
+{\footnotesize template$<$typename T , typename Alloc  = std\+::allocator$<$\+T$>$$>$ }\\void {\bfseries mold} (std\+::vector$<$ T, Alloc $>$ vec)
+\item 
+\mbox{\Hypertarget{classTFHEArray_a191b1fde603c33bc1dc3c2e4d67c106d}\label{classTFHEArray_a191b1fde603c33bc1dc3c2e4d67c106d}} 
+void {\bfseries mold} (int num)
+\item 
+\mbox{\Hypertarget{classTFHEArray_aebe566c169e3b146a1ab71802d142eab}\label{classTFHEArray_aebe566c169e3b146a1ab71802d142eab}} 
+void {\bfseries mold} (std\+::vector$<$ bool $>$\+::reference value)
+\item 
+\mbox{\hyperlink{classTFHEArray_a59f8df504643aed94d5d794370f4db97}{T\+F\+H\+E\+Array}} (const char $\ast$path, int id)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの配列をファイルから読み込むコンストラクタ. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class... T$>$ }\\Type \& \mbox{\hyperlink{classTFHEArray_a4450ad65a1acd651a5f576e7c576cc6a}{at}} (T... n)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの配列の要素の参照を返すメソッド. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTFHEArray_acdc7a3c63208a12b5072cc91adfa432d}{save}} (const char $\ast$path, int id)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの配列をファイルに保存するメソッド. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEArray_aee551540027f1dbd011e32e87fe2fb51}\label{classTFHEArray_aee551540027f1dbd011e32e87fe2fb51}} 
+std\+::vector$<$ Type $>$ {\bfseries array}
+\item 
+\mbox{\Hypertarget{classTFHEArray_ab9e6fcfff2a3dfc601b47745b48c8cfb}\label{classTFHEArray_ab9e6fcfff2a3dfc601b47745b48c8cfb}} 
+std\+::vector$<$ int $>$ {\bfseries shape}
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEArray_a3fa340a134c42e1aa3344dc1eb64f2de}\label{classTFHEArray_a3fa340a134c42e1aa3344dc1eb64f2de}} 
+void {\bfseries save\+\_\+option} (F\+I\+LE $\ast$fp)
+\item 
+\mbox{\Hypertarget{classTFHEArray_a0bffb5284c5413ea2ef69dec47f9689f}\label{classTFHEArray_a0bffb5284c5413ea2ef69dec47f9689f}} 
+void {\bfseries save\+\_\+meta} (F\+I\+LE $\ast$fp, int id)
+\item 
+\mbox{\Hypertarget{classTFHEArray_aa09e5fb4d0a584829c9d187dacc368b2}\label{classTFHEArray_aa09e5fb4d0a584829c9d187dacc368b2}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries write} (T vec, int pos, int depth)
+\item 
+\mbox{\Hypertarget{classTFHEArray_a781ddf9235d17d7813f6185143ea9f8c}\label{classTFHEArray_a781ddf9235d17d7813f6185143ea9f8c}} 
+void {\bfseries write} (int num, int pos, int depth)
+\item 
+\mbox{\Hypertarget{classTFHEArray_a5ae084f056098d7c0b1f84069f3b9003}\label{classTFHEArray_a5ae084f056098d7c0b1f84069f3b9003}} 
+void {\bfseries write} (std\+::vector$<$ bool $>$\+::reference value, int pos, int depth)
+\item 
+\mbox{\Hypertarget{classTFHEArray_aa370a56255f2cf5fdce337b3968eb15a}\label{classTFHEArray_aa370a56255f2cf5fdce337b3968eb15a}} 
+int {\bfseries array\+\_\+size} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{詳解}
+\subsubsection*{template$<$typename Type$>$\newline
+class T\+F\+H\+E\+Array$<$ Type $>$}
+
+T\+F\+H\+Eの多次元配列のクラス. 
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classTFHEArray_a3e38e8f81af4d557f9307393fadf63c3}\label{classTFHEArray_a3e38e8f81af4d557f9307393fadf63c3}} 
+\index{TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}!TFHEArray@{TFHEArray}}
+\index{TFHEArray@{TFHEArray}!TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{TFHEArray()}{TFHEArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+template$<$typename T , typename Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classTFHEArray}{T\+F\+H\+E\+Array}}$<$ Type $>$\+::\mbox{\hyperlink{classTFHEArray}{T\+F\+H\+E\+Array}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T, Alloc $>$}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+多次元のstd\+::vector vecとその形を示すstd\+::vector$<$int$>$ array\+\_\+shapeから\+T\+F\+H\+E\+Arrayを作成するコンストラクタ 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em std\+::vector$<$T,Alloc$>$} & vec(多次元ベクタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em std\+::vector$<$int$>$} & array\+\_\+shape(ベクタの形) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEArray}{T\+F\+H\+E\+Array}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEArray_a59f8df504643aed94d5d794370f4db97}\label{classTFHEArray_a59f8df504643aed94d5d794370f4db97}} 
+\index{TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}!TFHEArray@{TFHEArray}}
+\index{TFHEArray@{TFHEArray}!TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{TFHEArray()}{TFHEArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+\mbox{\hyperlink{classTFHEArray}{T\+F\+H\+E\+Array}}$<$ Type $>$\+::\mbox{\hyperlink{classTFHEArray}{T\+F\+H\+E\+Array}} (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+T\+F\+H\+Eの配列をファイルから読み込むコンストラクタ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em const} & char$\ast$ path(保存先のパス) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & id(識別用の\+ID) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classTFHEArray_a4450ad65a1acd651a5f576e7c576cc6a}\label{classTFHEArray_a4450ad65a1acd651a5f576e7c576cc6a}} 
+\index{TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}!at@{at}}
+\index{at@{at}!TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+template$<$class... T$>$ \\
+Type\& \mbox{\hyperlink{classTFHEArray}{T\+F\+H\+E\+Array}}$<$ Type $>$\+::at (\begin{DoxyParamCaption}\item[{T...}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+T\+F\+H\+Eの配列の要素の参照を返すメソッド. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em int} & n,...(index) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+任意の型\+Type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEArray_acdc7a3c63208a12b5072cc91adfa432d}\label{classTFHEArray_acdc7a3c63208a12b5072cc91adfa432d}} 
+\index{TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}!save@{save}}
+\index{save@{save}!TFHEArray$<$ Type $>$@{TFHEArray$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void \mbox{\hyperlink{classTFHEArray}{T\+F\+H\+E\+Array}}$<$ Type $>$\+::save (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+T\+F\+H\+Eの配列をファイルに保存するメソッド. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em const} & char$\ast$ path(保存先のパス) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & id(識別用の\+ID) \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+src/include/type/array/\mbox{\hyperlink{array_8hpp}{array.\+hpp}}\end{DoxyCompactItemize}

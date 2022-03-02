@@ -1,0 +1,47 @@
+\hypertarget{class__TFHEKeySet}{}\doxysection{\+\_\+\+T\+F\+H\+E\+Key\+Set クラス}
+\label{class__TFHEKeySet}\index{\_TFHEKeySet@{\_TFHEKeySet}}
+
+
+T\+F\+H\+Eの秘密鍵,クラウド鍵,パラメータをまとめて管理するクラス.  
+
+
+
+
+{\ttfamily \#include $<$keyset.\+hpp$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__TFHEKeySet_a43db4ff114f4fdd0255f5575e93af20d}\label{class__TFHEKeySet_a43db4ff114f4fdd0255f5575e93af20d}} 
+const T\+Fhe\+Gate\+Bootstrapping\+Parameter\+Set $\ast$ {\bfseries parameters} ()
+\item 
+\mbox{\Hypertarget{class__TFHEKeySet_a3a68200f7da64c2b890613ecbb8abfe3}\label{class__TFHEKeySet_a3a68200f7da64c2b890613ecbb8abfe3}} 
+const T\+Fhe\+Gate\+Bootstrapping\+Cloud\+Key\+Set $\ast$ {\bfseries cloud\+\_\+key} ()
+\item 
+\mbox{\Hypertarget{class__TFHEKeySet_a60041b1be5ce8a62bde5f007a1aad0fa}\label{class__TFHEKeySet_a60041b1be5ce8a62bde5f007a1aad0fa}} 
+const T\+Fhe\+Gate\+Bootstrapping\+Secret\+Key\+Set $\ast$ {\bfseries secret\+\_\+key} ()
+\item 
+\mbox{\Hypertarget{class__TFHEKeySet_ac17e73ccd631f848e01a7bf1b1675a68}\label{class__TFHEKeySet_ac17e73ccd631f848e01a7bf1b1675a68}} 
+void {\bfseries create\+\_\+new\+\_\+keyset} (int minimum\+\_\+lambda)
+\item 
+\mbox{\Hypertarget{class__TFHEKeySet_a617bf706b83e273d376ce6f434a5d82d}\label{class__TFHEKeySet_a617bf706b83e273d376ce6f434a5d82d}} 
+void {\bfseries load\+\_\+parameters} (const char $\ast$path)
+\item 
+\mbox{\Hypertarget{class__TFHEKeySet_a5c09a2ffbc672213aba4d41fa117eeb0}\label{class__TFHEKeySet_a5c09a2ffbc672213aba4d41fa117eeb0}} 
+void {\bfseries load\+\_\+cloud\+\_\+key} (const char $\ast$path)
+\item 
+\mbox{\Hypertarget{class__TFHEKeySet_a779651abe52520a8927a9021015d7eee}\label{class__TFHEKeySet_a779651abe52520a8927a9021015d7eee}} 
+void {\bfseries load\+\_\+secret\+\_\+key} (const char $\ast$path)
+\item 
+\mbox{\Hypertarget{class__TFHEKeySet_ae09848e609c3426c8d1f1b98d3fdf1c6}\label{class__TFHEKeySet_ae09848e609c3426c8d1f1b98d3fdf1c6}} 
+void {\bfseries delete\+\_\+keyset} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+T\+F\+H\+Eの秘密鍵,クラウド鍵,パラメータをまとめて管理するクラス. 
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+src/include/type/keyset/\mbox{\hyperlink{keyset_8hpp}{keyset.\+hpp}}\item 
+src/lib/type/keyset/\mbox{\hyperlink{keyset_8cpp}{keyset.\+cpp}}\end{DoxyCompactItemize}

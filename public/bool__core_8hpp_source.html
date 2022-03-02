@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tfhe_libex: src/include/type/core/bool_core.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tfhe_libex
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_56fb494bfda9b75d921f5a73f9bb6191.html">type</a></li><li class="navelem"><a class="el" href="dir_6bb5e10cf9dc3a24a36980ba17e4aa69.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bool_core.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bool__core_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef BOOL_CORE</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define BOOL_CORE</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../operations/io/io.hpp&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../raw/bit.hpp&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../type.hpp&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classTFHEBoolCore.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> : <span class="keyword">virtual</span> <span class="keyword">protected</span> <a class="code" href="classTFHEKeySet.html">TFHEKeySet</a>, <span class="keyword">virtual</span> <span class="keyword">protected</span> <a class="code" href="classTFHEIO.html">TFHEIO</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="classTFHEBit.html">TFHEBit</a> bit;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; elm);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>(<a class="code" href="classTFHEBit.html">TFHEBit</a> value);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> save(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classTFHEBoolCore.html#a0a30c0afe83a067d42cb03d94824668e">decrypt</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; <a class="code" href="classTFHEBoolCore.html#a4dbe522bd574cb1ab32571ff6b1d1133">operator=</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; elm);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="code" href="classTFHEBoolCore.html#ac1e9bf58f665a712585a596fdaf99618">operator!</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="code" href="classTFHEBoolCore.html#ab0c65a7e689583cde6be58af56a88e94">operator&amp;</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; other);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="code" href="classTFHEBoolCore.html#a7efe282d11de9eff1683d90e836ee2fe">operator|</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; other);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="code" href="classTFHEBoolCore.html#a9864e67adb88bad27f7eeb595f12ec20">operator^</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; other);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="code" href="classTFHEBoolCore.html#a2418d287c57c32b280d1857cb1f8b179">operator*</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; other);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="code" href="classTFHEBoolCore.html#ad35359c73507dd8e2194d1cf42292728">operator+</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; other);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="code" href="classTFHEBoolCore.html#adff2deef96ca145ad7a07b4120adb512">operator==</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; other);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> <a class="code" href="classTFHEBoolCore.html#ad6c600eac8ac49ae54845421103311f4">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a>&amp; other);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> load_raw(FILE* fp);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> save_raw(FILE* fp);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> _not(<a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> _and(<a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> _or(<a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> _xor(<a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> et(<a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> net(<a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value1, <a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> value2);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassTFHEBoolCore_html_a4dbe522bd574cb1ab32571ff6b1d1133"><div class="ttname"><a href="classTFHEBoolCore.html#a4dbe522bd574cb1ab32571ff6b1d1133">TFHEBoolCore::operator=</a></div><div class="ttdeci">TFHEBoolCore &amp; operator=(const TFHEBoolCore &amp;elm)</div><div class="ttdoc">TFHEのBool型の代入を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:66</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_a7efe282d11de9eff1683d90e836ee2fe"><div class="ttname"><a href="classTFHEBoolCore.html#a7efe282d11de9eff1683d90e836ee2fe">TFHEBoolCore::operator|</a></div><div class="ttdeci">TFHEBoolCore operator|(const TFHEBoolCore &amp;other)</div><div class="ttdoc">TFHEのBool型の論理和を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:77</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_ad6c600eac8ac49ae54845421103311f4"><div class="ttname"><a href="classTFHEBoolCore.html#ad6c600eac8ac49ae54845421103311f4">TFHEBoolCore::operator!=</a></div><div class="ttdeci">TFHEBoolCore operator!=(const TFHEBoolCore &amp;other)</div><div class="ttdoc">TFHEのBool型の等号の否定の判定を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:95</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_a2418d287c57c32b280d1857cb1f8b179"><div class="ttname"><a href="classTFHEBoolCore.html#a2418d287c57c32b280d1857cb1f8b179">TFHEBoolCore::operator*</a></div><div class="ttdeci">TFHEBoolCore operator*(const TFHEBoolCore &amp;other)</div><div class="ttdoc">TFHEのBool型の論理積を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:85</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html"><div class="ttname"><a href="classTFHEBoolCore.html">TFHEBoolCore</a></div><div class="ttdoc">TFHEのBool型のcoreクラス.</div><div class="ttdef"><b>Definition:</b> bool_core.hpp:14</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_ac1e9bf58f665a712585a596fdaf99618"><div class="ttname"><a href="classTFHEBoolCore.html#ac1e9bf58f665a712585a596fdaf99618">TFHEBoolCore::operator!</a></div><div class="ttdeci">TFHEBoolCore operator!()</div><div class="ttdoc">TFHEのBool型の否定を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:71</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_a9864e67adb88bad27f7eeb595f12ec20"><div class="ttname"><a href="classTFHEBoolCore.html#a9864e67adb88bad27f7eeb595f12ec20">TFHEBoolCore::operator^</a></div><div class="ttdeci">TFHEBoolCore operator^(const TFHEBoolCore &amp;other)</div><div class="ttdoc">TFHEのBool型の排他的論理和を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:81</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_a0a30c0afe83a067d42cb03d94824668e"><div class="ttname"><a href="classTFHEBoolCore.html#a0a30c0afe83a067d42cb03d94824668e">TFHEBoolCore::decrypt</a></div><div class="ttdeci">bool decrypt()</div><div class="ttdoc">TFHEのBool型を復号するメソッド.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:24</div></div>
+<div class="ttc" id="aclassTFHEBit_html"><div class="ttname"><a href="classTFHEBit.html">TFHEBit</a></div><div class="ttdoc">単数のLweSample*をwrapするクラス.</div><div class="ttdef"><b>Definition:</b> bit.hpp:12</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_adff2deef96ca145ad7a07b4120adb512"><div class="ttname"><a href="classTFHEBoolCore.html#adff2deef96ca145ad7a07b4120adb512">TFHEBoolCore::operator==</a></div><div class="ttdeci">TFHEBoolCore operator==(const TFHEBoolCore &amp;other)</div><div class="ttdoc">TFHEのBool型の等号の判定を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:92</div></div>
+<div class="ttc" id="aclassTFHEIO_html"><div class="ttname"><a href="classTFHEIO.html">TFHEIO</a></div><div class="ttdoc">ファイル入出力の共通処理のクラス.</div><div class="ttdef"><b>Definition:</b> io.hpp:12</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html"><div class="ttname"><a href="classTFHEKeySet.html">TFHEKeySet</a></div><div class="ttdoc">TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:43</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_ab0c65a7e689583cde6be58af56a88e94"><div class="ttname"><a href="classTFHEBoolCore.html#ab0c65a7e689583cde6be58af56a88e94">TFHEBoolCore::operator&amp;</a></div><div class="ttdeci">TFHEBoolCore operator&amp;(const TFHEBoolCore &amp;other)</div><div class="ttdoc">TFHEのBool型の論理積を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:73</div></div>
+<div class="ttc" id="aclassTFHEBoolCore_html_ad35359c73507dd8e2194d1cf42292728"><div class="ttname"><a href="classTFHEBoolCore.html#ad35359c73507dd8e2194d1cf42292728">TFHEBoolCore::operator+</a></div><div class="ttdeci">TFHEBoolCore operator+(const TFHEBoolCore &amp;other)</div><div class="ttdoc">TFHEのBool型の論理和を行うオペレータ.</div><div class="ttdef"><b>Definition:</b> bool_core.cpp:88</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

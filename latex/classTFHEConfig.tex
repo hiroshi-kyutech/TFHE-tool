@@ -1,0 +1,51 @@
+\hypertarget{classTFHEConfig}{}\doxysection{T\+F\+H\+E\+Config クラス}
+\label{classTFHEConfig}\index{TFHEConfig@{TFHEConfig}}
+
+
+設定するクラス.  
+
+
+
+
+{\ttfamily \#include $<$config.\+hpp$>$}
+
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classTFHEConfig_ab0fc50956dc2124fd8dcd0a1e301d1ff}{set\+Seed}} (uint32\+\_\+t $\ast$values, int size)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの鍵生成前にシード値を設定するためのメソッド. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEConfig_acca2f2124ec46249fb9bce66385cab03}\label{classTFHEConfig_acca2f2124ec46249fb9bce66385cab03}} 
+static bool \mbox{\hyperlink{classTFHEConfig_acca2f2124ec46249fb9bce66385cab03}{safe\+\_\+mode}} = true
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+E\+Bool型の論理積を行うオペレータ. falseに設定することでエラー検出機能をoffにする代わりに計算時間を短くする. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+設定するクラス. 
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classTFHEConfig_ab0fc50956dc2124fd8dcd0a1e301d1ff}\label{classTFHEConfig_ab0fc50956dc2124fd8dcd0a1e301d1ff}} 
+\index{TFHEConfig@{TFHEConfig}!setSeed@{setSeed}}
+\index{setSeed@{setSeed}!TFHEConfig@{TFHEConfig}}
+\doxysubsubsection{\texorpdfstring{setSeed()}{setSeed()}}
+{\footnotesize\ttfamily void T\+F\+H\+E\+Config\+::set\+Seed (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{values,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+T\+F\+H\+Eの鍵生成前にシード値を設定するためのメソッド. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em uint32\+\_\+t$\ast$} & values(配列) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & size(配列の要素の数) \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+src/include/type/config/\mbox{\hyperlink{config_8hpp}{config.\+hpp}}\item 
+src/lib/type/config/\mbox{\hyperlink{config_8cpp}{config.\+cpp}}\end{DoxyCompactItemize}

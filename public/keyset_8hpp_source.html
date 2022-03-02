@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tfhe_libex: src/include/type/keyset/keyset.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tfhe_libex
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_56fb494bfda9b75d921f5a73f9bb6191.html">type</a></li><li class="navelem"><a class="el" href="dir_20c759cc644430e99f9d79c59e29d3ee.html">keyset</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">keyset.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="keyset_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef KEY_SET</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define KEY_SET</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../common/common.hpp&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class__TFHEKeySet.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__TFHEKeySet.html">_TFHEKeySet</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  TFheGateBootstrappingParameterSet* _parameters = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  TFheGateBootstrappingCloudKeySet* _cloud_key = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  TFheGateBootstrappingSecretKeySet* _secret_key = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">const</span> TFheGateBootstrappingParameterSet* parameters();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">const</span> TFheGateBootstrappingCloudKeySet* cloud_key();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">const</span> TFheGateBootstrappingSecretKeySet* secret_key();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="comment">//  public:</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class__TFHEKeySet.html">_TFHEKeySet</a>() {}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  ~<a class="code" href="class__TFHEKeySet.html">_TFHEKeySet</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> create_new_keyset(<span class="keywordtype">int</span> minimum_lambda);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> load_parameters(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> load_cloud_key(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> load_secret_key(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> delete_keyset();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classTFHEKeySet.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTFHEKeySet.html">TFHEKeySet</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> <a class="code" href="class__TFHEKeySet.html">_TFHEKeySet</a> keyset;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">   52</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> TFheGateBootstrappingParameterSet* <a class="code" href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">parameters</a>() {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> keyset.parameters();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">   60</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> TFheGateBootstrappingCloudKeySet* <a class="code" href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">cloud_key</a>() {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> keyset.cloud_key();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">   68</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> TFheGateBootstrappingSecretKeySet* <a class="code" href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">secret_key</a>() {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> keyset.secret_key();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classTFHEKeySet.html">TFHEKeySet</a>() {}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  ~<a class="code" href="classTFHEKeySet.html">TFHEKeySet</a>() {}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classTFHEKeySet.html#a3c95fe0632a477e18af69f268cd59ed8">   79</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTFHEKeySet.html#a3c95fe0632a477e18af69f268cd59ed8">create_new_keyset</a>(<span class="keywordtype">int</span> minimum_lambda) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    keyset.create_new_keyset(minimum_lambda);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> set_seed(uint32_t* values, <span class="keywordtype">int</span> size) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    tfhe_random_generator_setSeed(values, size);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classTFHEKeySet.html#aeb8549e62c9aa4d77aec48eacfdbb025">   90</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTFHEKeySet.html#aeb8549e62c9aa4d77aec48eacfdbb025">load_parameters</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    keyset.load_parameters(path);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classTFHEKeySet.html#a3e35bec0fc09b7876569d25f066b7920">   97</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTFHEKeySet.html#a3e35bec0fc09b7876569d25f066b7920">load_cloud_key</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path) { keyset.load_cloud_key(path); }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classTFHEKeySet.html#ad324eaa3be302b3e4c033a4ca2064a7b">  102</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTFHEKeySet.html#ad324eaa3be302b3e4c033a4ca2064a7b">load_secret_key</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    keyset.load_secret_key(path);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTFHEKeySet.html#a61b41fb319193ea54811e892f70e9348">save_parameters</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTFHEKeySet.html#a5e8dd9b8903f1c4ecb05ea8e10e5c35f">save_cloud_key</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTFHEKeySet.html#abee9efbf4c03d8ce5c12aac885b8a281">save_secret_key</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassTFHEKeySet_html_abee9efbf4c03d8ce5c12aac885b8a281"><div class="ttname"><a href="classTFHEKeySet.html#abee9efbf4c03d8ce5c12aac885b8a281">TFHEKeySet::save_secret_key</a></div><div class="ttdeci">static void save_secret_key(const char *path)</div><div class="ttdoc">TFHEの秘密鍵をファイルに保存するメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.cpp:96</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_ad324eaa3be302b3e4c033a4ca2064a7b"><div class="ttname"><a href="classTFHEKeySet.html#ad324eaa3be302b3e4c033a4ca2064a7b">TFHEKeySet::load_secret_key</a></div><div class="ttdeci">static void load_secret_key(const char *path)</div><div class="ttdoc">TFHEの秘密鍵を読み込むメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:102</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_a3e35bec0fc09b7876569d25f066b7920"><div class="ttname"><a href="classTFHEKeySet.html#a3e35bec0fc09b7876569d25f066b7920">TFHEKeySet::load_cloud_key</a></div><div class="ttdeci">static void load_cloud_key(const char *path)</div><div class="ttdoc">TFHEのクラウド鍵を読み込むメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:97</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_a42147024080eb883d3191c56b88df811"><div class="ttname"><a href="classTFHEKeySet.html#a42147024080eb883d3191c56b88df811">TFHEKeySet::cloud_key</a></div><div class="ttdeci">static const TFheGateBootstrappingCloudKeySet * cloud_key()</div><div class="ttdoc">TFheGateBootstrappingCloudKeySet*を返すメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:60</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_a3c95fe0632a477e18af69f268cd59ed8"><div class="ttname"><a href="classTFHEKeySet.html#a3c95fe0632a477e18af69f268cd59ed8">TFHEKeySet::create_new_keyset</a></div><div class="ttdeci">static void create_new_keyset(int minimum_lambda)</div><div class="ttdoc">TFHEの秘密鍵,クラウド鍵,パラメータを作成するメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:79</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_aeb8549e62c9aa4d77aec48eacfdbb025"><div class="ttname"><a href="classTFHEKeySet.html#aeb8549e62c9aa4d77aec48eacfdbb025">TFHEKeySet::load_parameters</a></div><div class="ttdeci">static void load_parameters(const char *path)</div><div class="ttdoc">TFHEのパラメータを読み込むメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:90</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_a9f7ba38f07fe21a125b3fe201b5ae8e5"><div class="ttname"><a href="classTFHEKeySet.html#a9f7ba38f07fe21a125b3fe201b5ae8e5">TFHEKeySet::parameters</a></div><div class="ttdeci">static const TFheGateBootstrappingParameterSet * parameters()</div><div class="ttdoc">TFheGateBootstrappingParameterSet*を返すメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:52</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_a5e8dd9b8903f1c4ecb05ea8e10e5c35f"><div class="ttname"><a href="classTFHEKeySet.html#a5e8dd9b8903f1c4ecb05ea8e10e5c35f">TFHEKeySet::save_cloud_key</a></div><div class="ttdeci">static void save_cloud_key(const char *path)</div><div class="ttdoc">TFHEのクラウド鍵をファイルに保存するメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.cpp:90</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html"><div class="ttname"><a href="classTFHEKeySet.html">TFHEKeySet</a></div><div class="ttdoc">TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:43</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_a00e824da20fd4ee46e37af639d1e5784"><div class="ttname"><a href="classTFHEKeySet.html#a00e824da20fd4ee46e37af639d1e5784">TFHEKeySet::secret_key</a></div><div class="ttdeci">static const TFheGateBootstrappingSecretKeySet * secret_key()</div><div class="ttdoc">TFheGateBootstrappingSecretKeySet*を返すメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:68</div></div>
+<div class="ttc" id="aclassTFHEKeySet_html_a61b41fb319193ea54811e892f70e9348"><div class="ttname"><a href="classTFHEKeySet.html#a61b41fb319193ea54811e892f70e9348">TFHEKeySet::save_parameters</a></div><div class="ttdeci">static void save_parameters(const char *path)</div><div class="ttdoc">TFHEのパラメータをファイルに保存するメソッド.</div><div class="ttdef"><b>Definition:</b> keyset.cpp:84</div></div>
+<div class="ttc" id="aclass__TFHEKeySet_html"><div class="ttname"><a href="class__TFHEKeySet.html">_TFHEKeySet</a></div><div class="ttdoc">TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するクラス.</div><div class="ttdef"><b>Definition:</b> keyset.hpp:12</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

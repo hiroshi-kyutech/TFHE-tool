@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tfhe_libex: src/include/operations/arithmetic/ternary/mux.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tfhe_libex
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_bd69ab98958a6d2b7f18d38d8c79dbd3.html">operations</a></li><li class="navelem"><a class="el" href="dir_a641ed7b7821e6604c0f9fde2a010f54.html">arithmetic</a></li><li class="navelem"><a class="el" href="dir_13dd29fb5e160ef6665e36304d6519a7.html">ternary</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mux.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mux_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MUX</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MUX</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../../type/core/bool_core.hpp&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="mux_8hpp.html#aa825b5575b270e02422ca64425f163f1">   18</a></span>&#160;Type <a class="code" href="mux_8hpp.html#aa825b5575b270e02422ca64425f163f1">mux</a>(<a class="code" href="classTFHEBoolCore.html">TFHEBoolCore</a> condition, Type true_value, Type false_value) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  Type true_result;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  printf(<span class="stringliteral">&quot;debug -1\n&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  std::thread tv([&amp;true_result, &amp;true_value, &amp;condition]() {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    true_result = true_value * condition;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  });</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  tv.join();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  printf(<span class="stringliteral">&quot;debug 0\n&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  Type false_result = false_value * !condition;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  printf(<span class="stringliteral">&quot;debug 1\n&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">return</span> true_result + false_result;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassTFHEBoolCore_html"><div class="ttname"><a href="classTFHEBoolCore.html">TFHEBoolCore</a></div><div class="ttdoc">TFHEのBool型のcoreクラス.</div><div class="ttdef"><b>Definition:</b> bool_core.hpp:14</div></div>
+<div class="ttc" id="amux_8hpp_html_aa825b5575b270e02422ca64425f163f1"><div class="ttname"><a href="mux_8hpp.html#aa825b5575b270e02422ca64425f163f1">mux</a></div><div class="ttdeci">Type mux(TFHEBoolCore condition, Type true_value, Type false_value)</div><div class="ttdoc">条件式conditionに応じて、真式true_valueか偽式false_valueを返す関数.</div><div class="ttdef"><b>Definition:</b> mux.hpp:18</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

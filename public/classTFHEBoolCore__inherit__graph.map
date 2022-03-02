@@ -1,0 +1,6 @@
+<map id="TFHEBoolCore" name="TFHEBoolCore">
+<area shape="rect" id="node1" title="TFHEのBool型のcoreクラス." alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node4" href="$classTFHEBool.html" title="TFHEの真理値型のクラス." alt="" coords="20,229,105,256"/>
+<area shape="rect" id="node2" href="$classTFHEKeySet.html" title="TFHEの秘密鍵,クラウド鍵,パラメータをまとめて管理するwrapperクラス." alt="" coords="12,5,113,32"/>
+<area shape="rect" id="node3" href="$classTFHEIO.html" title="ファイル入出力の共通処理のクラス." alt="" coords="65,80,135,107"/>
+</map>

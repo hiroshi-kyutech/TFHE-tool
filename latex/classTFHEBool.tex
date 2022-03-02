@@ -1,0 +1,170 @@
+\hypertarget{classTFHEBool}{}\doxysection{T\+F\+H\+E\+Bool クラス}
+\label{classTFHEBool}\index{TFHEBool@{TFHEBool}}
+
+
+T\+F\+H\+Eの真理値型のクラス.  
+
+
+
+
+{\ttfamily \#include $<$bool.\+hpp$>$}
+
+
+
+T\+F\+H\+E\+Bool の継承関係図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classTFHEBool__inherit__graph}
+\end{center}
+\end{figure}
+
+
+T\+F\+H\+E\+Bool 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classTFHEBool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEBool_a4fc1630a41d3c69cce21f7dad9e6655f}\label{classTFHEBool_a4fc1630a41d3c69cce21f7dad9e6655f}} 
+{\bfseries T\+F\+H\+E\+Bool} (const \mbox{\hyperlink{classTFHEBool}{T\+F\+H\+E\+Bool}} \&elm)
+\item 
+\mbox{\Hypertarget{classTFHEBool_a24d26b02558e7e01114afc9b37600266}\label{classTFHEBool_a24d26b02558e7e01114afc9b37600266}} 
+{\bfseries T\+F\+H\+E\+Bool} (const \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \&elm)
+\item 
+\mbox{\Hypertarget{classTFHEBool_a3660c9ff124aa3a463bd66634b9093c6}\label{classTFHEBool_a3660c9ff124aa3a463bd66634b9093c6}} 
+\mbox{\hyperlink{classTFHEBool_a3660c9ff124aa3a463bd66634b9093c6}{T\+F\+H\+E\+Bool}} ()
+\begin{DoxyCompactList}\small\item\em 空の\+T\+F\+H\+Eの\+Bool型を生成するコンストラクタ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBool_aa1a1d51da83aaeb31da107fd4da75e73}{T\+F\+H\+E\+Bool}} (bool value)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの\+Bool型を生成するコンストラクタ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBool_a91f9a05857b3ea8dcddf3e59a21b6091}{T\+F\+H\+E\+Bool}} (const char $\ast$path, int id)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+Eの\+Bool型をファイルから読み込むコンストラクタ. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTFHEBool_a730218c30906350637b52b24667d00df}\label{classTFHEBool_a730218c30906350637b52b24667d00df}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries operator$\ast$} (const \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} \&other)
+\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEBool_ace4b6a1b5251756d9b98cad8f1d523a7}{operator+}} (const \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+E\+Bool型の論理和を行うオペレータ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \mbox{\hyperlink{classTFHEBool_a26f79af54814d9b89e11525fbaca3b36}{operator$\ast$}} (const \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \&other)
+\begin{DoxyCompactList}\small\item\em T\+F\+H\+E\+Bool型の論理積を行うオペレータ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEBool_a974d26a71336a206f77c95d338668d5e}\label{classTFHEBool_a974d26a71336a206f77c95d338668d5e}} 
+void {\bfseries load\+\_\+raw} (F\+I\+LE $\ast$fp) override
+\item 
+\mbox{\Hypertarget{classTFHEBool_a1100cb708c8cc95685c43a7fdc0542b9}\label{classTFHEBool_a1100cb708c8cc95685c43a7fdc0542b9}} 
+void {\bfseries save\+\_\+raw} (F\+I\+LE $\ast$fp) override
+\item 
+\mbox{\Hypertarget{classTFHEBool_ad55c0ce4e55de5328d7edb4326f93724}\label{classTFHEBool_ad55c0ce4e55de5328d7edb4326f93724}} 
+\mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} {\bfseries mul} (\mbox{\hyperlink{classTFHEBool}{T\+F\+H\+E\+Bool}} value1, \mbox{\hyperlink{classTFHEIntegerCore}{T\+F\+H\+E\+Integer\+Core}} value2)
+\end{DoxyCompactItemize}
+\doxysubsection*{静的限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEBool_a4293720248bdfa672ca19c885b7e2197}\label{classTFHEBool_a4293720248bdfa672ca19c885b7e2197}} 
+static void {\bfseries save\+\_\+option\+\_\+for\+Array} (F\+I\+LE $\ast$fp)
+\item 
+\mbox{\Hypertarget{classTFHEBool_abab7ee6da9c555adb27690bb817742e3}\label{classTFHEBool_abab7ee6da9c555adb27690bb817742e3}} 
+static int {\bfseries array\+\_\+size} (int shape\+\_\+size, int array\+\_\+size)
+\item 
+\mbox{\Hypertarget{classTFHEBool_ad17c09deb5840ac9646f5c09a15d30bb}\label{classTFHEBool_ad17c09deb5840ac9646f5c09a15d30bb}} 
+static int {\bfseries array\+\_\+option\+\_\+num} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{フレンド}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTFHEBool_a84944ee7ea70d71ff8579ec71de3f435}\label{classTFHEBool_a84944ee7ea70d71ff8579ec71de3f435}} 
+class {\bfseries T\+F\+H\+E\+Array$<$ T\+F\+H\+E\+Bool $>$}
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{詳解}
+T\+F\+H\+Eの真理値型のクラス. 
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classTFHEBool_aa1a1d51da83aaeb31da107fd4da75e73}\label{classTFHEBool_aa1a1d51da83aaeb31da107fd4da75e73}} 
+\index{TFHEBool@{TFHEBool}!TFHEBool@{TFHEBool}}
+\index{TFHEBool@{TFHEBool}!TFHEBool@{TFHEBool}}
+\doxysubsubsection{\texorpdfstring{TFHEBool()}{TFHEBool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+F\+H\+E\+Bool\+::\+T\+F\+H\+E\+Bool (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの\+Bool型を生成するコンストラクタ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em int} & number(暗号化対象) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTFHEBool_a91f9a05857b3ea8dcddf3e59a21b6091}\label{classTFHEBool_a91f9a05857b3ea8dcddf3e59a21b6091}} 
+\index{TFHEBool@{TFHEBool}!TFHEBool@{TFHEBool}}
+\index{TFHEBool@{TFHEBool}!TFHEBool@{TFHEBool}}
+\doxysubsubsection{\texorpdfstring{TFHEBool()}{TFHEBool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+F\+H\+E\+Bool\+::\+T\+F\+H\+E\+Bool (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+Eの\+Bool型をファイルから読み込むコンストラクタ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em const} & char$\ast$ path(保存先のパス) \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & id(識別用の\+ID) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classTFHEBool_a26f79af54814d9b89e11525fbaca3b36}\label{classTFHEBool_a26f79af54814d9b89e11525fbaca3b36}} 
+\index{TFHEBool@{TFHEBool}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!TFHEBool@{TFHEBool}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Bool\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+E\+Bool型の論理積を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEBool}{T\+F\+H\+E\+Bool}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 論理演算結果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTFHEBool_ace4b6a1b5251756d9b98cad8f1d523a7}\label{classTFHEBool_ace4b6a1b5251756d9b98cad8f1d523a7}} 
+\index{TFHEBool@{TFHEBool}!operator+@{operator+}}
+\index{operator+@{operator+}!TFHEBool@{TFHEBool}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} T\+F\+H\+E\+Bool\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+T\+F\+H\+E\+Bool型の論理和を行うオペレータ. 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEBool}{T\+F\+H\+E\+Bool}}} & this(呼び出し元のポインタ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}}} & other(対象の参照) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\mbox{\hyperlink{classTFHEBoolCore}{T\+F\+H\+E\+Bool\+Core(\+T\+F\+H\+E\+Bool)}} 論理演算結果 
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+src/include/type/bool/\mbox{\hyperlink{bool_8hpp}{bool.\+hpp}}\item 
+src/lib/type/bool/\mbox{\hyperlink{bool_8cpp}{bool.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tfhe_libex: src/include/operations/arithmetic/utils/half_adder.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tfhe_libex
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_bd69ab98958a6d2b7f18d38d8c79dbd3.html">operations</a></li><li class="navelem"><a class="el" href="dir_a641ed7b7821e6604c0f9fde2a010f54.html">arithmetic</a></li><li class="navelem"><a class="el" href="dir_94220b08a76ceaa3ff1a1c0ed9bc4e6c.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">half_adder.hpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>half_adder(半加算器)の関数.  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="tfhe__lib_8hpp_source.html">../../../common/tfhe_lib.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+half_adder.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="half__adder_8hpp__incl.png" border="0" usemap="#src_2include_2operations_2arithmetic_2utils_2half__adder_8hpp" alt=""/></div>
+<map name="src_2include_2operations_2arithmetic_2utils_2half__adder_8hpp" id="src_2include_2operations_2arithmetic_2utils_2half__adder_8hpp">
+<area shape="rect" title="half_adder(半加算器)の関数." alt="" coords="29,5,195,61"/>
+<area shape="rect" href="tfhe__lib_8hpp.html" title="tfhe(https://github.com/tfhe/tfhe)のinclude." alt="" coords="39,109,185,151"/>
+<area shape="rect" title=" " alt="" coords="5,199,96,225"/>
+<area shape="rect" title=" " alt="" coords="120,199,229,225"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="half__adder_8hpp__dep__incl.png" border="0" usemap="#src_2include_2operations_2arithmetic_2utils_2half__adder_8hppdep" alt=""/></div>
+<map name="src_2include_2operations_2arithmetic_2utils_2half__adder_8hppdep" id="src_2include_2operations_2arithmetic_2utils_2half__adder_8hppdep">
+<area shape="rect" title="half_adder(半加算器)の関数." alt="" coords="2234,5,2399,61"/>
+<area shape="rect" href="full__adder_8hpp.html" title="full_adder(全加算器)の関数." alt="" coords="2234,109,2399,165"/>
+<area shape="rect" href="integer__core_8hpp.html" title="TFHEの整数型のcoreクラス." alt="" coords="2118,221,2275,262"/>
+<area shape="rect" href="half__adder_8cpp.html" title="half_adder(半加算器)の関数の実装." alt="" coords="2423,109,2578,165"/>
+<area shape="rect" href="full__adder_8cpp.html" title="full_adder(全加算器)の関数の実装." alt="" coords="2300,213,2451,269"/>
+<area shape="rect" href="bool_8hpp.html" title="TFHEの真理値型のクラス." alt="" coords="1927,317,2085,359"/>
+<area shape="rect" href="integer_8hpp.html" title="TFHEの整数型のクラス." alt="" coords="2109,317,2284,359"/>
+<area shape="rect" href="integer__core_8cpp.html" title="TFHEの整数型のcoreクラスの実装." alt="" coords="2309,317,2485,359"/>
+<area shape="rect" href="tfhe__libex_8hpp.html" title="提供用." alt="" coords="2022,503,2211,530"/>
+<area shape="rect" href="bool_8cpp.html" title="TFHEの真理値型のクラスの実装." alt="" coords="1661,414,1847,441"/>
+<area shape="rect" href="alice__array_8cpp.html" title="TFHEの多次元配列の暗号化と保存のテスト." alt="" coords="5,585,148,627"/>
+<area shape="rect" href="cloud__bitonic__mergesort_8cpp.html" title="TFHEのbitonic_mergesortのテスト." alt="" coords="172,585,347,627"/>
+<area shape="rect" href="cloud__oem__sort_8cpp.html" title="TFHEのoem_sortのテスト." alt="" coords="371,585,518,627"/>
+<area shape="rect" href="verif__array_8cpp.html" title="TFHEの多次元配列の復号と読み込みのテスト." alt="" coords="543,585,685,627"/>
+<area shape="rect" href="alice__bool_8cpp.html" title="TFHEの真理値型の暗号化と保存のテスト." alt="" coords="709,585,847,627"/>
+<area shape="rect" href="cloud__and_8cpp.html" title="TFHEの真理値型の論理積のテスト." alt="" coords="871,585,1013,627"/>
+<area shape="rect" href="cloud__mux__bool_8cpp.html" title="TFHEの真理値型の条件演算子のテスト." alt="" coords="1037,585,1178,627"/>
+<area shape="rect" href="cloud__not_8cpp.html" title="TFHEの真理値型の否定のテスト." alt="" coords="1202,585,1343,627"/>
+<area shape="rect" href="cloud__or_8cpp.html" title="TFHEの真理値型の論理和のテスト." alt="" coords="1367,585,1509,627"/>
+<area shape="rect" href="cloud__xor_8cpp.html" title="TFHEの真理値型の排他的論理和のテスト." alt="" coords="1533,585,1674,627"/>
+<area shape="rect" href="verif__bool_8cpp.html" title="TFHEの真理値型の復号と読み込みのテスト." alt="" coords="1698,585,1834,627"/>
+<area shape="rect" href="alice__integer_8cpp.html" title="TFHEの整数型の暗号化と保存のテスト." alt="" coords="1858,585,2013,627"/>
+<area shape="rect" href="cloud__add_8cpp.html" title="TFHEの整数型の加算のテスト." alt="" coords="2037,585,2196,627"/>
+<area shape="rect" href="cloud__div_8cpp.html" title="TFHEの整数型の除算のテスト." alt="" coords="2220,585,2379,627"/>
+<area shape="rect" href="cloud__equal__to_8cpp.html" title="TFHEの整数型の等号のテスト." alt="" coords="2403,585,2561,627"/>
+<area shape="rect" href="cloud__less__than_8cpp.html" title="TFHEの整数型の不等号のテスト." alt="" coords="2585,585,2744,627"/>
+<area shape="rect" href="cloud__minus_8cpp.html" title="TFHEの整数型の符号反転のテスト." alt="" coords="2768,585,2927,627"/>
+<area shape="rect" href="cloud__mod_8cpp.html" title="TFHEの整数型の剰余演算のテスト." alt="" coords="2951,585,3109,627"/>
+<area shape="rect" href="cloud__mul_8cpp.html" title="TFHEの整数型の乗算のテスト." alt="" coords="3133,585,3292,627"/>
+<area shape="rect" href="cloud__mux__integer_8cpp.html" title="TFHEの整数型の条件演算子のテスト." alt="" coords="3316,585,3475,627"/>
+<area shape="rect" href="cloud__sign_8cpp.html" title="TFHEの整数型の絶対値の取得のテスト." alt="" coords="3499,585,3657,627"/>
+<area shape="rect" href="cloud__sub_8cpp.html" title="TFHEの整数型の減算のテスト." alt="" coords="3681,585,3840,627"/>
+<area shape="rect" href="test__error__check_8cpp.html" title="TFHEの整数型の0除算とオーバーフローのエラーチェックのテスト." alt="" coords="3865,585,4014,627"/>
+<area shape="rect" href="verif__bool__integer_8cpp.html" title="TFHEの整数型の演算結果(真理値型)の復号と読み込みのテスト." alt="" coords="4038,585,4193,627"/>
+<area shape="rect" href="verif__integer_8cpp.html" title="TFHEの整数型の演算結果(整数型)の復号と読み込みのテスト." alt="" coords="4217,585,4371,627"/>
+<area shape="rect" href="int16_8hpp.html" title="TFHEの16bitsの整数型のクラス." alt="" coords="1871,407,2045,448"/>
+<area shape="rect" href="int32_8hpp.html" title="TFHEの32bitsの整数型のクラス." alt="" coords="2172,407,2347,448"/>
+<area shape="rect" href="int8_8hpp.html" title="TFHEの8bitsの整数型のクラス." alt="" coords="2371,407,2545,448"/>
+<area shape="rect" href="int16_8cpp.html" title="TFHEの16bitsの整数型のクラスの実装." alt="" coords="1854,496,1998,537"/>
+<area shape="rect" href="int32_8cpp.html" title="TFHEの32bitsの整数型のクラスの実装." alt="" coords="2235,496,2379,537"/>
+<area shape="rect" href="int8_8cpp.html" title="TFHEの8bitsの整数型のクラスの実装." alt="" coords="2403,496,2547,537"/>
+</map>
+</div>
+</div>
+<p><a href="half__adder_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:af0c53e7c52639372e2f409117df96b09"><td class="memItemLeft" align="right" valign="top"><a id="af0c53e7c52639372e2f409117df96b09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>half_adder</b> (LweSample *sum, LweSample *carry_out, LweSample *a, LweSample *b, const TFheGateBootstrappingCloudKeySet *bk)</td></tr>
+<tr class="separator:af0c53e7c52639372e2f409117df96b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b2c360496be4551328610507158aa7"><td class="memItemLeft" align="right" valign="top"><a id="a23b2c360496be4551328610507158aa7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>half_adder_4sub</b> (LweSample *sum, LweSample *carry_out, LweSample *a, LweSample *b, const TFheGateBootstrappingCloudKeySet *bk)</td></tr>
+<tr class="separator:a23b2c360496be4551328610507158aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>half_adder(半加算器)の関数. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
