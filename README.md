@@ -25,7 +25,7 @@ make
 build/src/libディレクトリ下にlibtfhe_libex.soが作成されます.  
 
 ### API
-[APIリファレンス](https://kit-ai-sakamoto-lab.gitlab.io/encrypt/tfhe_libex)公開しました.  
+[APIリファレンス](https://kit-ai-sakamoto-lab.gitlab.io/tfhe_libex)公開しました.  
 
 ### テスト
 src/testディレクトリにテストコードがあります.  
