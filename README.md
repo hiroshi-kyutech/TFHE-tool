@@ -39,3 +39,6 @@ Nightly版に浮動小数点型(保存, エラーチェック機能なし)とそ
 [TFHEライブラリ](https://github.com/tfhe/tfhe)が必要.  
 No Coding Comment.  
 No Enough Error Check.  
+
+## ライセンス
+ライセンスは本ライブラリが依存する[TFHEライブラリ](https://github.com/tfhe/tfhe)が許可する範囲でオープンソース、コピーレフトとします。
