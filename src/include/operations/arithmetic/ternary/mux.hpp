@@ -17,14 +17,11 @@
 template <typename Type>
 Type mux(TFHEBoolCore condition, Type true_value, Type false_value) {
   Type true_result;
-  printf("debug -1\n");
   std::thread tv([&true_result, &true_value, &condition]() {
     true_result = true_value * condition;
   });
   tv.join();
-  printf("debug 0\n");
   Type false_result = false_value * !condition;
-  printf("debug 1\n");
 
   return true_result + false_result;
 };
