@@ -25,7 +25,7 @@ make
 build/src/libディレクトリ下にlibtfhe_libex.soが作成されます.  
 
 ### API
-[APIリファレンス](https://hiroshi-kyutech.github.io/FTHE-tool/public/)公開しました.  
+[APIリファレンス](https://hiroshi-kyutech.github.io/TFHE-tool/public/)公開しました.  
 
 ### テスト
 src/testディレクトリにテストコードがあります.  
