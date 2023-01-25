@@ -238,7 +238,7 @@ TFHEIntegerCore TFHEIntegerCore::mul(TFHEIntegerCore value1,
   auto prcs1 = [&tmps, &max_nb_value, &min_nb_value](int index) {
     tmps[index] = shift(max_nb_value, index);
 
-    for (int i = 0; i < max_nb_value.bits.nbelems; i++) {
+    for (int i = index; i < max_nb_value.bits.nbelems; i++) {
       bootsAND(&tmps[index].bits[i], &tmps[index].bits[i],
                &min_nb_value.bits[index], cloud_key());
     }
@@ -253,18 +253,26 @@ TFHEIntegerCore TFHEIntegerCore::mul(TFHEIntegerCore value1,
     }
   }
   auto prcs2 = [&tmps, &min_nb_value](int cur, int pos) {
-    if (min_nb_value.bits.nbelems >
-        pos * (int)pow(2, (cur + 1)) + (int)pow(2, (cur))) {
-      tmps[pos * (int)pow(2, (cur + 1))] =
-          tmps[pos * (int)pow(2, (cur + 1))] +
-          tmps[pos * (int)pow(2, (cur + 1)) + (int)pow(2, (cur))];
+    int augend = pos << cur + 1;
+    int addend = (pos << cur + 1) | (1 << cur);
+    if (min_nb_value.bits.nbelems <= addend) return;
+
+    // tmps[augend] = tmps[augend] + tmps[addend];
+    TFHEBits carry_out(2);
+    TFHEBit sum;
+    half_adder(sum.bit, &carry_out[addend % 2], &tmps[augend].bits[addend],
+               &tmps[addend].bits[addend], cloud_key());
+    bootsCOPY(&tmps[augend].bits[addend], sum.bit, cloud_key());
+    for (int i = addend + 1; i < tmps[augend].bits.nbelems; i++) {
+        full_adder(sum.bit, &carry_out[i % 2 == 0 ? 0 : 1],
+                   &tmps[augend].bits[i], &tmps[addend].bits[i],
+                   &carry_out[i % 2 == 0 ? 1 : 0], cloud_key());
+        bootsCOPY(&tmps[augend].bits[i], sum.bit, cloud_key());
     }
   };
 
-  int last = min_nb_value.bits.nbelems % 2 == 0
-                 ? min_nb_value.bits.nbelems / 2
-                 : ceil(min_nb_value.bits.nbelems / 2.0);
-  for (int i = 0; i < (int)ceil(log2(min_nb_value.bits.nbelems)); i++) {
+  int last = min_nb_value.bits.nbelems + (min_nb_value.bits.nbelems & 1) >> 1;
+  for (int i = 0; 1 << i <= min_nb_value.bits.nbelems; i++) {
     std::vector<std::thread> threads;
     for (int j = 0; j < last; j++) {
       threads.emplace_back(std::thread(prcs2, i, j));
@@ -272,7 +280,7 @@ TFHEIntegerCore TFHEIntegerCore::mul(TFHEIntegerCore value1,
     for (int j = 0; j < last; j++) {
       threads[j].join();
     }
-    last = last % 2 == 0 ? last / 2 : ceil(last / 2.0);
+    last = (last + (last & 1)) >> 1;
   }
 
   return tmps[0];
