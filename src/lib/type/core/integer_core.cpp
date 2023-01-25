@@ -237,7 +237,9 @@ TFHEIntegerCore TFHEIntegerCore::mul(TFHEIntegerCore value1,
   TFHEIntegerCore tmps[min_nb_value.bits.nbelems];
   auto prcs1 = [&tmps, &max_nb_value, &min_nb_value](int index) {
     tmps[index] = shift(max_nb_value, index);
-
+    if (index == min_nb_value.bits.nbelems - 1) {
+      tmps[index] = -tmps[index];
+    }
     for (int i = index; i < max_nb_value.bits.nbelems; i++) {
       bootsAND(&tmps[index].bits[i], &tmps[index].bits[i],
                &min_nb_value.bits[index], cloud_key());
